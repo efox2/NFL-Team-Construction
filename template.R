@@ -39,7 +39,7 @@ monitorFunc <- function(obj) {
 }
 
 # Model building
-iter = 50
+iter = 100
 player_size <- length(df[,1])
 sal.limit <- 50000
 
@@ -55,4 +55,4 @@ rbga.results <- rbga.bin(size = player_size,
 # Print results
 summary(rbga.results, echo = T)
 
-plot(rbga.results, type="hist")
+plot(rbga.results) # type can be "hist", "vars", or "default"
