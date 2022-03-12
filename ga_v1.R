@@ -25,13 +25,13 @@ evalFunc <- function(x) {
   # Set constraints and return value
   # if over salary, set to worst score (players all 0) + how over the salary cap the team is / 1000
   if(current_team_salary > sal_limit) {
-    new_score = max_team_score + ((current_team_salary - sal_limit) / 1000)
+    new_score = max_team_score + ((current_team_salary - sal_limit) / 100000)
     if(new_score > score) score = new_score
   }
   
   # if incorrect number of players, set to worst score + 1000 * player diff
   if(sum(x) != total_players ) {
-    new_score = max_team_score + (abs(sum(x) - total_players) * 1000)
+    new_score = max_team_score + (abs(sum(x) - total_players) * 10)
     if(new_score > score) score = new_score
   }
   
@@ -62,10 +62,10 @@ target_players = 53
 max_team_score = total_players * 100
 
 # Set Genetic Algorithm Parameters
-iter = 100
+iter = 1000
 popSize = 300
-mutationChance = 0.01
-nextGeneration = 20
+mutationChance = 0.025
+nextGeneration = 25
 
 # Run model
 rbga.results <- rbga.bin(size = player_size, 
@@ -87,3 +87,5 @@ bestIx = rbga.results$evaluations == minEval
 bestTeam = rbga.results$population[bestIx,]
 bestTeamPlayers = df[which(bestTeam == 1),]
 bestTeamPlayers
+
+# save(rbga.results, "test2.Rdata")
