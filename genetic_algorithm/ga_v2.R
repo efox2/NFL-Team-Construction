@@ -14,7 +14,7 @@ length(unique(df[,5]))
 # Set Contextual Parameters
 sal_limit <- 200 * 1000000
 total_players = 53
-target_players = 53
+target_players = 3
 max_team_score = total_players * 100
 
 # Set Genetic Algorithm Parameters
