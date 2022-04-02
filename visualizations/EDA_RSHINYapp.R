@@ -13,7 +13,7 @@
 library(shiny)
 library(tidyverse)
 
-data = read.csv("/Users/amrithasubburayan/Downloads/NFL-Team-Construction-main/Datasets/simplified_dataset_v2.csv")
+data = read.csv("Datasets/simplified_dataset_v2.csv")
 # Define UI for application that draws a histogram
 ui <- fluidPage(selectInput(inputId = "Position",
                             label = "Position:",
