@@ -46,7 +46,7 @@ nextGeneration = 25
 # Set Penalty Parameters
 salPenalty = 10000      # penalty is how over the cap you are / salPenalty
 playerCountPenalty = 100  # penalty is abs(how many players you have - target) * playerCountPenalty
-positionalPenalty = 10 # penalty is how many missing required position players * positionalPenalty
+positionalPenalty = 100 # penalty is how many missing required position players * positionalPenalty
 
 # Pre-select some players
 fullTeamIxs = which(df$Team == 'New England Patriots')
@@ -136,7 +136,7 @@ newFullTeamPlayers = df[c(strtoi(bestTeamPlayers$oldIX), preSelectedIxs),]
 print(sprintf("Number of Players on Team: %d", length(newFullTeamPlayers$Team)))
 
 # Salary Cap Breakdown
-print(sprintf("Cap Room Remaining: %d million", floor(sal_limit - sum(newFullTeamPlayers$Annual.Salary..in...) / 1000000)))
+print(sprintf("Cap Room Remaining: %d million", floor((sal_limit - sum(newFullTeamPlayers$Annual.Salary..in...)) / 1000000)))
 
 # Position breakdown
 for (position in positions) {
@@ -144,4 +144,5 @@ for (position in positions) {
   print(sprintf("Extra %s: %d", position,length(which(newFullTeamPlayers$Position == position)) - neededPosition))
 }
 
-# save(rbga.results, "test3.Rdata")
+# setwd("C:/Users/Evan/Documents/Github/NFL-Team-Construction/genetic_algorithm")
+# save.image(file="test3.RData") 
