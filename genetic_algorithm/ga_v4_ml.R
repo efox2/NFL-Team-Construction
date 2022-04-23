@@ -43,6 +43,9 @@ total_players = 53
 target_players = 3
 max_team_score = total_players * 100
 
+# read xgboost model
+ml_xgboost = readRDS("./xgboost_regression.rds")
+
 # Set Genetic Algorithm Parameters
 iter = 100
 popSize = 300
@@ -96,12 +99,16 @@ evalFunc <- function(x) {
   # ml_output is the output of the machine learning function
   #####
   
-  ml_xgboost = readRDS("./xgboost_regression.rds")
+
   ml_input = matrix(unlist(ml_input), ncol =53, nrow =1)
   team_prediction = predict(ml_xgboost, ml_input)
   ml_output = team_prediction
   
   ######
+  
+  # Determine score for genalg
+  # ml_output is output from ml model
+  score = max_team_score + 1 - ((ml_output * max_team_score)/100)
   
   # Set constraints and return value
   # if over salary, set to worst score (players all 0) + how over the salary cap the team is / 1000
@@ -128,11 +135,7 @@ evalFunc <- function(x) {
     neededPosition = position_counts[which(positions==position)]
     if (inPosition < neededPosition) score = score + positionalPenalty * (neededPosition - inPosition)
   }
-  
-  # Determine score for genalg
-  # ml_output is output from ml model
-  score = max_team_score + 1 - ((ml_output * max_team_score)/100)
-
+  return(score)
 }
 
 # Setup monitoring function
