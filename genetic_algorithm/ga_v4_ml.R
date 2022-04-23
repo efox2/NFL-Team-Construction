@@ -46,6 +46,7 @@ max_team_score = total_players * 100
 
 # read xgboost model
 ml_xgboost = readRDS("./xgboost_regression.rds")
+#ml_xgboost_crossvalidated = readRDS("./xgboost_regression_crossvalidated.rds")
 
 # Set Genetic Algorithm Parameters
 iter = 100
