@@ -11,6 +11,7 @@ library(magrittr) # needs to be run every time you start R and want to use %>%
 library(dplyr)
 library(ggplot2)
 library(shiny)
+library(shinycssloaders)
 library(shinydashboard)
 library(tidyverse)
 library(shiny)
@@ -21,6 +22,10 @@ library(shinydashboard)
 library(plotly)
 
 source('GeneticAlg.R')
+source('GeneticAlg2.R')
+
+# Options for Spinner
+options(spinner.color="#0275D8", spinner.color.background="#ffffff", spinner.size=2)
 
 data = read.csv("/Users/amrithasubburayan/Downloads/NFL-Team-Construction-main/Datasets/simplified_dataset_v2.csv")
 # Define UI for application that draws a histogram
@@ -99,7 +104,7 @@ body <- dashboardBody(
     
                     fluidRow(
                         column(12,
-                               dataTableOutput(outputId = "genalg1")
+                               withSpinner(dataTableOutput(outputId = "genalg1"),type=4)
                                )
                     )
                 
@@ -108,7 +113,12 @@ body <- dashboardBody(
         # Sumedh -- > copy the UI of genealg1
         
         tabItem(tabName = "GeneticAlg2",
-                h2("GeneticAlg2")
+                h2("GeneticAlg2"),
+                fluidRow(
+                    column(12,
+                           withSpinner(dataTableOutput(outputId = "genalg2"),type=4)
+                    )
+                )
         ),
         
         # Sanjay -- > copy the UI of genealg1
@@ -130,7 +140,7 @@ ui <- dashboardPage(
 # Define server logic required to draw a histogram
 server <- function(input, output) {
     
-    # Exploratory ata Analsys
+    # Exploratory Data Analsys
     output$plot1 <- renderPlot({
         data %>%
             filter(
@@ -238,6 +248,8 @@ server <- function(input, output) {
     output$genalg1 <- renderDataTable({ geneticalg(3,"New England Patriots")})
 
     # Sumedh -- > Call the function for your gen alg using the structre abv
+    
+    output$genalg2 <- renderDataTable({ geneticalg2(3,"New England Patriots")})
     
     # Sanjay -- > Call the function for your gen alg using the structre abv
     
