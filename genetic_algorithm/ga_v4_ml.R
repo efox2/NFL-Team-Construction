@@ -6,7 +6,8 @@ library(data.table)
 library(lattice)
 
 # Set working directory and read in the csv / excel file
-setwd("C:/Users/Evan/Documents/Github/NFL-Team-Construction/Datasets")
+# make sure to change the wd
+setwd("D:\\Work\\Projects\\NFL-Team-Construction\\Datasets")
 df <- read.csv("simplified_dataset_v2.csv")
 player_size <- length(df[,1])
 
@@ -185,5 +186,6 @@ for (position in positions) {
   print(sprintf("Extra %s: %d", position,length(which(newFullTeamPlayers$Position == position)) - neededPosition))
 }
 
-# setwd("C:/Users/Evan/Documents/Github/NFL-Team-Construction/genetic_algorithm")
-# save.image(file="test3.RData") 
+#make sure to change the wd
+setwd("D:\\Work\\Projects\\NFL-Team-Construction\\genetic_algorithm")
+save.image(file="test4.RData") 
