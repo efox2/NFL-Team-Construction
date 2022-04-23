@@ -1,15 +1,13 @@
 #Position based Clustering
 
-df =  read.csv("C:/Users/T460S/Desktop/data.csv")
+df =  read.csv("C:/Users/T460S/Desktop/SDM II/Project/data.csv")
 unique_position = list("RE", "CB","HB", "QB", "WR", "LE", "RG",  
               "TE",  "MLB", "LOLB", "DT", "LT", "SS", "C",
               "LG", "FS",  "RT", "ROLB", "K", "FB", "P")
 
-#for (i in unique){
-#   print(filter(data, Position == i))
-#}
+# Filter the data to perform the clustering based on a position 
+position_data = filter(df, Position == 'QB')
 
-position_data = filter(df, Position == 'K')
 vars = list("Player_Name", "Overall_Rating", "Age","Annual_Salary")
 
 #UI for the Clustering
