@@ -1,6 +1,9 @@
 #install.packages('genalg')
 library(genalg)
 library(ggplot2)
+library(xgboost)
+library(data.table)
+library(lattice)
 
 # Set working directory and read in the csv / excel file
 setwd("C:/Users/Evan/Documents/Github/NFL-Team-Construction/Datasets")
@@ -93,7 +96,10 @@ evalFunc <- function(x) {
   # ml_output is the output of the machine learning function
   #####
   
-  
+  ml_xgboost = readRDS("./xgboost_regression.rds")
+  ml_input = matrix(unlist(ml_input), ncol =53, nrow =1)
+  team_prediction = predict(ml_xgboost, ml_input)
+  ml_output = team_prediction
   
   ######
   

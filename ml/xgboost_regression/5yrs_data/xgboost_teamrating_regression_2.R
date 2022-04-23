@@ -27,3 +27,5 @@ pred_y = predict(xgbc, xgb_test)
 rsquare=(y_test - pred_y)^2
 mse = lapply(rsquare, mean, na.rm = TRUE)
 rmse = lapply(mse, sqrt)
+
+saveRDS(xgbc, "./xgboost_regression.rds")
