@@ -189,4 +189,4 @@ for (position in positions) {
 
 #make sure to change the wd
 setwd("D:\\Work\\Projects\\NFL-Team-Construction\\genetic_algorithm")
-save.image(file="test4.RData") 
+save.image(file="test5.RData") 
