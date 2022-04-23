@@ -1,6 +1,8 @@
 library(shiny)
 
-data<- read.csv("C:/Users/T460S/Desktop/SDM II/Project/simplified_dataset_v2.csv")
+# data<- read.csv("C:/Users/T460S/Desktop/SDM II/Project/simplified_dataset_v2.csv")
+data =  read.csv("C:/Users/Evan/Documents/Github/NFL-Team-Construction/clustering/simplified_dataset_v2.csv")
+
 head(data,10)
 #scaled_data = scale(data[5:7])
 #data[5:7] = scaled_data

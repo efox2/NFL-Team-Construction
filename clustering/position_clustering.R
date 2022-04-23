@@ -2,20 +2,23 @@
 library(shiny)
 library(dplyr)
 
-df =  read.csv("C:/Users/T460S/Desktop/SDM II/Project/data.csv")
+# df =  read.csv("C:/Users/T460S/Desktop/SDM II/Project/data.csv")
+df =  read.csv("C:/Users/Evan/Documents/Github/NFL-Team-Construction/clustering/data.csv")
+
 unique_position = list("RE", "CB","HB", "QB", "WR", "LE", "RG",  
               "TE",  "MLB", "LOLB", "DT", "LT", "SS", "C",
               "LG", "FS",  "RT", "ROLB", "K", "FB", "P")
 
 # Filter the data to perform the clustering based on a position 
-position_data = filter(df, Position == 'QB')
+# position_data = filter(df, Position == 'QB')
 
 vars = list("Player_Name", "Overall_Rating", "Age","Annual_Salary")
 
 #UI for the Clustering
 ui = pageWithSidebar(
      headerPanel(' k-means clustering based on a Position'),
-     sidebarPanel(selectInput('xcol', 'X Variable', vars),
+     sidebarPanel(selectInput('pos', 'Position', unique_position),
+                  selectInput('xcol', 'X Variable', vars),
                   selectInput('ycol', 'Y Variable', vars),
                   numericInput('clusters', 'Cluster count', 3, min = 1, max = 9)),
      mainPanel(plotOutput('plot1')))
@@ -25,6 +28,9 @@ ui = pageWithSidebar(
 server = function(input, output, session)
   
   {
+  # filter position data based on input
+  # TODO: THIS IS THE PROBLEM LINE
+  position_data = reactive(filter(df, Position == input$pos))
   
   # Combine the selected variables into a new data frame
   selectedData = reactive({position_data[, c(input$xcol, input$ycol)]})
