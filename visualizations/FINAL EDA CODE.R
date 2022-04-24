@@ -23,67 +23,67 @@ library(plotly)
 
 source('GeneticAlg.R')
 source('GeneticAlg2.R')
-
+source('GeneticAlg3.R')
 # Options for Spinner
 options(spinner.color="#0275D8", spinner.color.background="#ffffff", spinner.size=2)
 
-data = read.csv("/Users/amrithasubburayan/Downloads/NFL-Team-Construction-main/Datasets/simplified_dataset_v2.csv")
+data = read.csv("./simplified_dataset_v2.csv")
 # Define UI for application that draws a histogram
 
 
 
 
 sidebar <- dashboardSidebar(selectInput("position", "Position", choices= data%>%
-                                 select(Position) %>% 
-                                 distinct()%>%
-                                 arrange(Position)%>%
-                                 drop_na()
-                                 ),
-                 
-                 selectInput("team", "Team", choices= data%>%
-                                 select(Team) %>% 
-                                 distinct()%>%
-                                 arrange(Team)%>%
-                                 drop_na()
-                             ),
-                 
-                 selectInput("PlayerTeamZone" , "PlayerTeamZone", choices = data %>%
-                                 select(PlayerTeamZone) %>%
-                                 distinct() %>%
-                                 group_by(PlayerTeamZone) %>%
-                                 
-                                 summarise(count = n()) %>%
-                                 arrange(desc(count)) %>%
-                                 head(100)
-                             ),
+                                            select(Position) %>% 
+                                            distinct()%>%
+                                            arrange(Position)%>%
+                                            drop_na()
+),
+
+selectInput("team", "Team", choices= data%>%
+                select(Team) %>% 
+                distinct()%>%
+                arrange(Team)%>%
+                drop_na()
+),
+
+selectInput("PlayerTeamZone" , "PlayerTeamZone", choices = data %>%
+                select(PlayerTeamZone) %>%
+                distinct() %>%
+                group_by(PlayerTeamZone) %>%
+                
+                summarise(count = n()) %>%
+                arrange(desc(count)) %>%
+                head(100)
+),
 
 
-                sidebarMenu(
-                            menuItem("Summary", tabName = "Summary"),
-                            menuItem("Exploratory Data Analysis", tabName = "EDA"),
-                            menuItem("Clustering", tabName = "ClusteringofPlayers"),
-                            menuItem("Genetic Algorithm 1", tabName = "GeneticAlg1"),
-                            menuItem("Genetic Algorithm 2", tabName = "GeneticAlg2"),
-                            menuItem("Genetic Algorithm 3", tabName = "GeneticAlg3")
-                            )
-                )
+sidebarMenu(
+    menuItem("Summary", tabName = "Summary"),
+    menuItem("Exploratory Data Analysis", tabName = "EDA"),
+    menuItem("Clustering", tabName = "ClusteringofPlayers"),
+    menuItem("Genetic Algorithm 1", tabName = "GeneticAlg1"),
+    menuItem("Genetic Algorithm 2", tabName = "GeneticAlg2"),
+    menuItem("Genetic Algorithm 3", tabName = "GeneticAlg3")
+)
+)
 
 
 body <- dashboardBody(
     tabItems(
         tabItem(tabName = "Summary",
                 h2("Summary")
-            ),
+        ),
         
         # Dinesh Should Work on this
         
         tabItem(tabName = "ClusteringofPlayers",
                 h2("Clustering")
         ),
-    
-    
+        
+        
         # EDA FOR NFL STATISTICS
-    
+        
         tabItem(tabName = "EDA",
                 h2("EDA"),
                 box(
@@ -101,12 +101,12 @@ body <- dashboardBody(
         
         tabItem(tabName = "GeneticAlg1",
                 h2("Genetic Alg1"),
-    
-                    fluidRow(
-                        column(12,
-                               withSpinner(dataTableOutput(outputId = "genalg1"),type=4)
-                               )
+                
+                fluidRow(
+                    column(12,
+                           withSpinner(dataTableOutput(outputId = "genalg1"),type=4)
                     )
+                )
                 
         ),
         
@@ -124,18 +124,23 @@ body <- dashboardBody(
         # Sanjay -- > copy the UI of genealg1
         
         tabItem(tabName = "GeneticAlg3",
-                h2("GeneticAlg3")
+                h2("GeneticAlg3"),
+                fluidRow(
+                    column(12,
+                           withSpinner(dataTableOutput(outputId = "genalg3"),type=4)
+                    )
+                )
         )
     )
 )
 
 
 ui <- dashboardPage(
-        dashboardHeader(title = "NFL STATISTICS"),
-        sidebar,
-        body 
+    dashboardHeader(title = "NFL STATISTICS"),
+    sidebar,
+    body 
 )
-    
+
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
@@ -246,14 +251,14 @@ server <- function(input, output) {
     #Genetic ALgorithm function
     
     output$genalg1 <- renderDataTable({ geneticalg(3,"New England Patriots")})
-
+    
     # Sumedh -- > Call the function for your gen alg using the structre abv
     
     output$genalg2 <- renderDataTable({ geneticalg2(3,"New England Patriots")})
     
     # Sanjay -- > Call the function for your gen alg using the structre abv
     
-    
+    output$genalg3 <- renderDataTable({ geneticalg3(3,"New England Patriots")})
     
 }
 
