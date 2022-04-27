@@ -172,7 +172,7 @@ body <- dashboardBody(
 )
 
 
-ui <- dashboardPage(skin = "green"
+ui <- dashboardPage(skin = "green",
     dashboardHeader(title = "NFL STATISTICS"),
     sidebar,
     body 
