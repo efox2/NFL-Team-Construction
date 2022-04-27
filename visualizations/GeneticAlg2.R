@@ -8,8 +8,8 @@ library(lattice)
 geneticalg2 <- function(target_players, selectedTeam){
 
 # Set working directory and read in the csv / excel file
-setwd("D:\\Work\\Projects\\NFL-Team-Construction\\Datasets")
-df <- read.csv("simplified_dataset_v2.csv")
+  setwd('C:/Users/Evan/Documents/GitHub/NFL-Team-Construction/visualizations')
+  df = read.csv("./simplified_dataset_v2_old.csv")
 player_size <- length(df[,1])
 
 # positions

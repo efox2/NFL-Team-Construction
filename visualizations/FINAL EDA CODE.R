@@ -27,10 +27,10 @@ source('GeneticAlg2.R')
 source('GeneticAlg3.R')
 # Options for Spinner
 options(spinner.color="#0275D8", spinner.color.background="#ffffff", spinner.size=2)
-setwd("/Users/amrithasubburayan/Desktop/Github/Datasets")
+setwd('C:/Users/Evan/Documents/GitHub/NFL-Team-Construction/visualizations')
 data = read.csv("./simplified_dataset_v2.csv")
 
-clus_data = data
+clus_data <- data
 colnames(clus_data)[1] = 'PlayerName'
 head(clus_data, 4)
 encode_ordinal <- function(x, order = unique(x)) {
@@ -83,7 +83,7 @@ sidebarMenu(
     menuItem("Clustering", tabName = "ClusteringofPlayers",icon = icon("table")),
     menuItem("Genetic Algorithm 1", tabName = "GeneticAlg1",icon = icon("refresh")),
     menuItem("Genetic Algorithm 2", tabName = "GeneticAlg2",icon = icon("refresh")),
-    menuItem("Genetic Algorithm 3", tabName = "GeneticAlg3",icon = icon("resfresh"))
+    menuItem("Genetic Algorithm 3", tabName = "GeneticAlg3",icon = icon("refresh"))
 )
 )
 
