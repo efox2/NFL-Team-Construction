@@ -78,12 +78,12 @@ selectInput("PlayerTeamZone" , "PlayerTeamZone", choices = data %>%
 
 
 sidebarMenu(
-    menuItem("Summary", tabName = "Summary"),
-    menuItem("Exploratory Data Analysis", tabName = "EDA"),
-    menuItem("Clustering", tabName = "ClusteringofPlayers"),
-    menuItem("Genetic Algorithm 1", tabName = "GeneticAlg1"),
-    menuItem("Genetic Algorithm 2", tabName = "GeneticAlg2"),
-    menuItem("Genetic Algorithm 3", tabName = "GeneticAlg3")
+    menuItem("Summary", tabName = "Summary",icon = icon("list_alt")),
+    menuItem("Exploratory Data Analysis", tabName = "EDA",icon = icon("bar-chart-o")),
+    menuItem("Clustering", tabName = "ClusteringofPlayers",icon = icon("table")),
+    menuItem("Genetic Algorithm 1", tabName = "GeneticAlg1",icon = icon("refresh")),
+    menuItem("Genetic Algorithm 2", tabName = "GeneticAlg2",icon = icon("refresh")),
+    menuItem("Genetic Algorithm 3", tabName = "GeneticAlg3",icon = icon("resfresh"))
 )
 )
 
