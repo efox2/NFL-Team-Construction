@@ -20,79 +20,122 @@ library(DT)
 library(ggplot2)
 library(shinydashboard)
 library(plotly)
+library(shinythemes)
 
 source('GeneticAlg.R')
 source('GeneticAlg2.R')
-
+source('GeneticAlg3.R')
 # Options for Spinner
 options(spinner.color="#0275D8", spinner.color.background="#ffffff", spinner.size=2)
+setwd('C:/Users/Evan/Documents/GitHub/NFL-Team-Construction/visualizations')
+data = read.csv("./simplified_dataset_v2.csv")
 
-data = read.csv("/Users/amrithasubburayan/Downloads/NFL-Team-Construction-main/Datasets/simplified_dataset_v2.csv")
+clus_data <- data
+colnames(clus_data)[1] = 'PlayerName'
+head(clus_data, 4)
+encode_ordinal <- function(x, order = unique(x)) {
+    x=as.numeric(factor(x, levels = order, exclude = NULL))
+    x
+}
+table(clus_data[['PlayerName']], encode_ordinal(clus_data[['PlayerName']]), useNA = "ifany")
+clus_data['PlayerName'] = encode_ordinal(clus_data[['PlayerName']])
+clus_data <- subset (clus_data, select = -c(PlayerTeamZone, Team ))
+unique_position = list("RE", "CB","HB", "QB", "WR", "LE", "RG","TE",  "MLB", "LOLB", "DT", "LT", "SS", "C","LG", "FS",  "RT", "ROLB", "K", "FB", "P")
+vars1 = list("PlayerName", "OverallRating", "Age","AnnualSalary")
+
+
+df = clus_data
+table(df[['Position']], encode_ordinal(df[['Position']]), useNA = "ifany")
+df['Position'] = encode_ordinal(df[['Position']])
+vars = list("PlayerName", "Position", "OverallRating", "Age","AnnualSalary")
+
+
 # Define UI for application that draws a histogram
 
-
-
-
 sidebar <- dashboardSidebar(selectInput("position", "Position", choices= data%>%
-                                 select(Position) %>% 
-                                 distinct()%>%
-                                 arrange(Position)%>%
-                                 drop_na()
-                                 ),
-                 
-                 selectInput("team", "Team", choices= data%>%
-                                 select(Team) %>% 
-                                 distinct()%>%
-                                 arrange(Team)%>%
-                                 drop_na()
-                             ),
-                 
-                 selectInput("PlayerTeamZone" , "PlayerTeamZone", choices = data %>%
-                                 select(PlayerTeamZone) %>%
-                                 distinct() %>%
-                                 group_by(PlayerTeamZone) %>%
-                                 
-                                 summarise(count = n()) %>%
-                                 arrange(desc(count)) %>%
-                                 head(100)
-                             ),
+                                            select(Position) %>% 
+                                            distinct()%>%
+                                            arrange(Position)%>%
+                                            drop_na()
+),
+
+selectInput("team", "Team", choices= data%>%
+                select(Team) %>% 
+                distinct()%>%
+                arrange(Team)%>%
+                drop_na()
+),
+
+selectInput("PlayerTeamZone" , "PlayerTeamZone", choices = data %>%
+                select(PlayerTeamZone) %>%
+                distinct() %>%
+                group_by(PlayerTeamZone) %>%
+                
+                summarise(count = n()) %>%
+                arrange(desc(count)) %>%
+                head(100)
+),
 
 
-                sidebarMenu(
-                            menuItem("Summary", tabName = "Summary"),
-                            menuItem("Exploratory Data Analysis", tabName = "EDA"),
-                            menuItem("Clustering", tabName = "ClusteringofPlayers"),
-                            menuItem("Genetic Algorithm 1", tabName = "GeneticAlg1"),
-                            menuItem("Genetic Algorithm 2", tabName = "GeneticAlg2"),
-                            menuItem("Genetic Algorithm 3", tabName = "GeneticAlg3")
-                            )
-                )
+sidebarMenu(
+    menuItem("Summary", tabName = "Summary",icon = icon("list_alt")),
+    menuItem("Exploratory Data Analysis", tabName = "EDA",icon = icon("bar-chart-o")),
+    menuItem("Clustering", tabName = "ClusteringofPlayers",icon = icon("table")),
+    menuItem("Genetic Algorithm 1", tabName = "GeneticAlg1",icon = icon("refresh")),
+    menuItem("Genetic Algorithm 2", tabName = "GeneticAlg2",icon = icon("refresh")),
+    menuItem("Genetic Algorithm 3", tabName = "GeneticAlg3",icon = icon("refresh"))
+)
+)
 
 
 body <- dashboardBody(
     tabItems(
         tabItem(tabName = "Summary",
                 h2("Summary")
-            ),
+        ),
         
         # Dinesh Should Work on this
         
         tabItem(tabName = "ClusteringofPlayers",
-                h2("Clustering")
-        ),
-    
-    
+               navbarPage("KMeans Clustering",theme = shinytheme("united"),
+                           tabPanel("Clustering of Players",
+                                    sidebarPanel(selectInput('xcol', 'X Variable', vars),
+                                                 selectInput('ycol', 'Y Variable',vars),
+                                                 numericInput('clusters', 'Cluster count', 3, min = 1, max = 9),
+                                                 width = 3),
+                                    mainPanel(plotOutput('clusplot1'),width = 6)
+                                    
+                                   ),
+                           
+                           tabPanel("Clustering of Players Based on a Position",
+                                    sidebarPanel(selectInput("Position","Position:",choices = unique_position),
+                                                 selectInput('x', 'X Variable', vars1),
+                                                 selectInput('y', 'Y Variable', vars1),
+                                                 numericInput('n_Clusters', 'Cluster count', 3, min = 1, max = 9),
+                                                 width = 3),
+                                    mainPanel(plotOutput('clusplot2'), width = 6)
+                                    
+                                  ) 
+                          )
+                ),
+        
         # EDA FOR NFL STATISTICS
-    
+        
         tabItem(tabName = "EDA",
-                h2("EDA"),
-                box(
-                    plotOutput(outputId = "plot1"),
-                    plotOutput(outputId = "plot2"),
-                    plotOutput(outputId = "plot3"),
-                    plotOutput(outputId = "plot4"),
-                    plotOutput(outputId = "plot5"),
-                    plotOutput(outputId = "plot6")
+                h2("EXPLORATORY DATA ANALYSIS FOR NFL"),
+                submitButton(text = "Create new plot with new filters!"),
+                
+                fluidRow(
+                  
+                  tabBox(id = "EDA",width = 12,
+                         tabPanel("Annual Salary vs Overall Rating",title = "Plot1", plotOutput("plot1")),
+                         tabPanel("Overall Rating for each Team", title = "Plot2",plotOutput("plot2")),
+                         tabPanel("The Oldest Players in the season", title = "Plot3",plotOutput("plot3")),
+                         tabPanel("The Youngest Players in the season", title = "Plot4",plotOutput("plot4")),
+                         tabPanel("Players Rating in the NFL", title = "Plot5",plotOutput("plot5")),
+                         tabPanel("The 20 clubs who spend the least amount of wages", title = "Plot6",plotOutput("plot6")),
+                         
+                )
                 )
         ),
         
@@ -101,12 +144,12 @@ body <- dashboardBody(
         
         tabItem(tabName = "GeneticAlg1",
                 h2("Genetic Alg1"),
-    
-                    fluidRow(
-                        column(12,
-                               withSpinner(dataTableOutput(outputId = "genalg1"),type=4)
-                               )
+                
+                fluidRow(
+                    column(12,
+                           withSpinner(dataTableOutput(outputId = "genalg1"),type=4)
                     )
+                )
                 
         ),
         
@@ -124,18 +167,23 @@ body <- dashboardBody(
         # Sanjay -- > copy the UI of genealg1
         
         tabItem(tabName = "GeneticAlg3",
-                h2("GeneticAlg3")
+                h2("GeneticAlg3"),
+                fluidRow(
+                    column(12,
+                           withSpinner(dataTableOutput(outputId = "genalg3"),type=4)
+                    )
+                )
         )
     )
 )
 
 
-ui <- dashboardPage(
-        dashboardHeader(title = "NFL STATISTICS"),
-        sidebar,
-        body 
+ui <- dashboardPage(skin = "green",
+    dashboardHeader(title = "NFL STATISTICS"),
+    sidebar,
+    body 
 )
-    
+
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
@@ -241,19 +289,40 @@ server <- function(input, output) {
             theme(legend.position = "none")
     })
     
-    # Dinesh -- > Plot for clustering
+    # Plots for clustering
+   output$clusplot1 <- renderPlot({
+      selectedData <- reactive({df[, c(input$xcol, input$ycol)]})
+      clusters <- reactive({kmeans(selectedData(), input$clusters)})
+      palette(c("#E41A1C", "#377EB8", "#4DAF4A", "#984EA3","#FF7F00", "#FFFF33", "#A65628", "#F781BF", "#999999"))
+      par(mar = c(5.1, 4.1, 0, 1))
+      plot(selectedData(),col = clusters()$cluster,pch = 20, cex = 3)
+      points(clusters()$centers, pch = 3, cex = 3, lwd = 3)
+      
+    })
+    
+    output$clusplot2 = renderPlot({
+      
+      position_data <- reactive({subset(clus_data,data$Position %in% input$Position)})
+      selected_data = reactive({position_data()[, c(input$x, input$y)]})
+      Clusters = reactive({kmeans(selected_data(), input$n_Clusters)})
+      palette(c("#E41A1C", "#377EB8", "#4DAF4A", "#984EA3","#FF7F00","#FFFF33", "#A65628", "#F781BF", "#999999"))
+      par(mar = c(5.1, 4.1, 0, 1))
+      plot(selected_data(),col = Clusters()$cluster,pch = 20, cex = 3)
+      points(Clusters()$centers, pch = 3, cex = 3, lwd = 3)
+      
+    })
     
     #Genetic ALgorithm function
     
     output$genalg1 <- renderDataTable({ geneticalg(3,"New England Patriots")})
-
+    
     # Sumedh -- > Call the function for your gen alg using the structre abv
     
     output$genalg2 <- renderDataTable({ geneticalg2(3,"New England Patriots")})
     
     # Sanjay -- > Call the function for your gen alg using the structre abv
     
-    
+    output$genalg3 <- renderDataTable({ geneticalg3(3,"New England Patriots")})
     
 }
 
