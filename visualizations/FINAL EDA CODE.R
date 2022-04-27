@@ -27,7 +27,7 @@ source('GeneticAlg2.R')
 source('GeneticAlg3.R')
 # Options for Spinner
 options(spinner.color="#0275D8", spinner.color.background="#ffffff", spinner.size=2)
-
+setwd("/Users/amrithasubburayan/Desktop/Github/Datasets")
 data = read.csv("./simplified_dataset_v2.csv")
 
 clus_data = data
@@ -122,14 +122,20 @@ body <- dashboardBody(
         # EDA FOR NFL STATISTICS
         
         tabItem(tabName = "EDA",
-                h2("EDA"),
-                box(
-                    plotOutput(outputId = "plot1"),
-                    plotOutput(outputId = "plot2"),
-                    plotOutput(outputId = "plot3"),
-                    plotOutput(outputId = "plot4"),
-                    plotOutput(outputId = "plot5"),
-                    plotOutput(outputId = "plot6")
+                h2("EXPLORATORY DATA ANALYSIS FOR NFL"),
+                submitButton(text = "Create new plot with new filters!"),
+                
+                fluidRow(
+                  
+                  tabBox(id = "EDA",width = 12,
+                         tabPanel("Annual Salary vs Overall Rating",title = "Plot1", plotOutput("plot1")),
+                         tabPanel("Overall Rating for each Team", title = "Plot2",plotOutput("plot2")),
+                         tabPanel("The Oldest Players in the season", title = "Plot3",plotOutput("plot3")),
+                         tabPanel("The Youngest Players in the season", title = "Plot4",plotOutput("plot4")),
+                         tabPanel("Players Rating in the NFL", title = "Plot5",plotOutput("plot5")),
+                         tabPanel("The 20 clubs who spend the least amount of wages", title = "Plot6",plotOutput("plot6")),
+                         
+                )
                 )
         ),
         
