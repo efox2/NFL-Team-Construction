@@ -20,6 +20,7 @@ library(DT)
 library(ggplot2)
 library(shinydashboard)
 library(plotly)
+library(shinythemes)
 
 source('GeneticAlg.R')
 source('GeneticAlg2.R')
@@ -28,10 +29,28 @@ source('GeneticAlg3.R')
 options(spinner.color="#0275D8", spinner.color.background="#ffffff", spinner.size=2)
 
 data = read.csv("./simplified_dataset_v2.csv")
+
+clus_data = data
+colnames(clus_data)[1] = 'PlayerName'
+head(clus_data, 4)
+encode_ordinal <- function(x, order = unique(x)) {
+    x=as.numeric(factor(x, levels = order, exclude = NULL))
+    x
+}
+table(clus_data[['PlayerName']], encode_ordinal(clus_data[['PlayerName']]), useNA = "ifany")
+clus_data['PlayerName'] = encode_ordinal(clus_data[['PlayerName']])
+clus_data <- subset (clus_data, select = -c(PlayerTeamZone, Team ))
+unique_position = list("RE", "CB","HB", "QB", "WR", "LE", "RG","TE",  "MLB", "LOLB", "DT", "LT", "SS", "C","LG", "FS",  "RT", "ROLB", "K", "FB", "P")
+vars1 = list("PlayerName", "OverallRating", "Age","AnnualSalary")
+
+
+df = clus_data
+table(df[['Position']], encode_ordinal(df[['Position']]), useNA = "ifany")
+df['Position'] = encode_ordinal(df[['Position']])
+vars = list("PlayerName", "Position", "OverallRating", "Age","AnnualSalary")
+
+
 # Define UI for application that draws a histogram
-
-
-
 
 sidebar <- dashboardSidebar(selectInput("position", "Position", choices= data%>%
                                             select(Position) %>% 
@@ -78,9 +97,27 @@ body <- dashboardBody(
         # Dinesh Should Work on this
         
         tabItem(tabName = "ClusteringofPlayers",
-                h2("Clustering")
-        ),
-        
+               navbarPage("KMeans Clustering",theme = shinytheme("united"),
+                           tabPanel("Clustering of Players",
+                                    sidebarPanel(selectInput('xcol', 'X Variable', vars),
+                                                 selectInput('ycol', 'Y Variable',vars),
+                                                 numericInput('clusters', 'Cluster count', 3, min = 1, max = 9),
+                                                 width = 3),
+                                    mainPanel(plotOutput('clusplot1'),width = 6)
+                                    
+                                   ),
+                           
+                           tabPanel("Clustering of Players Based on a Position",
+                                    sidebarPanel(selectInput("Position","Position:",choices = unique_position),
+                                                 selectInput('x', 'X Variable', vars1),
+                                                 selectInput('y', 'Y Variable', vars1),
+                                                 numericInput('n_Clusters', 'Cluster count', 3, min = 1, max = 9),
+                                                 width = 3),
+                                    mainPanel(plotOutput('clusplot2'), width = 6)
+                                    
+                                  ) 
+                          )
+                ),
         
         # EDA FOR NFL STATISTICS
         
@@ -135,7 +172,7 @@ body <- dashboardBody(
 )
 
 
-ui <- dashboardPage(
+ui <- dashboardPage(skin = "green"
     dashboardHeader(title = "NFL STATISTICS"),
     sidebar,
     body 
@@ -246,7 +283,28 @@ server <- function(input, output) {
             theme(legend.position = "none")
     })
     
-    # Dinesh -- > Plot for clustering
+    # Plots for clustering
+   output$clusplot1 <- renderPlot({
+      selectedData <- reactive({df[, c(input$xcol, input$ycol)]})
+      clusters <- reactive({kmeans(selectedData(), input$clusters)})
+      palette(c("#E41A1C", "#377EB8", "#4DAF4A", "#984EA3","#FF7F00", "#FFFF33", "#A65628", "#F781BF", "#999999"))
+      par(mar = c(5.1, 4.1, 0, 1))
+      plot(selectedData(),col = clusters()$cluster,pch = 20, cex = 3)
+      points(clusters()$centers, pch = 3, cex = 3, lwd = 3)
+      
+    })
+    
+    output$clusplot2 = renderPlot({
+      
+      position_data <- reactive({subset(clus_data,data$Position %in% input$Position)})
+      selected_data = reactive({position_data()[, c(input$x, input$y)]})
+      Clusters = reactive({kmeans(selected_data(), input$n_Clusters)})
+      palette(c("#E41A1C", "#377EB8", "#4DAF4A", "#984EA3","#FF7F00","#FFFF33", "#A65628", "#F781BF", "#999999"))
+      par(mar = c(5.1, 4.1, 0, 1))
+      plot(selected_data(),col = Clusters()$cluster,pch = 20, cex = 3)
+      points(Clusters()$centers, pch = 3, cex = 3, lwd = 3)
+      
+    })
     
     #Genetic ALgorithm function
     
