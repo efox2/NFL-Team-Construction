@@ -27,7 +27,7 @@ source('GeneticAlg2.R')
 source('GeneticAlg3.R')
 # Options for Spinner
 options(spinner.color="#0275D8", spinner.color.background="#ffffff", spinner.size=2)
-setwd('C:/Users/Evan/Documents/GitHub/NFL-Team-Construction/visualizations')
+setwd('/Users/amrithasubburayan/Desktop/Github/visualizations')
 data = read.csv("./simplified_dataset_v2.csv")
 
 clus_data <- data
@@ -205,7 +205,7 @@ server <- function(input, output) {
             filter(
                 Position == input$position) %>%
             ggplot(aes(x = OverallRating,
-                       y = Team,  color=OverallRating , height = 20, width = 10)) +
+                       y = Age,  color=OverallRating , height = 20, width = 10)) +
             geom_line() +
             scale_x_continuous(limits = input$OverallRating) +
             theme_minimal()
