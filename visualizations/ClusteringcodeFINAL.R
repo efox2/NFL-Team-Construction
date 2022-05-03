@@ -26,9 +26,8 @@ source('GeneticAlg2.R')
 source('GeneticAlg3.R')
 # Options for Spinner
 options(spinner.color="#0275D8", spinner.color.background="#ffffff", spinner.size=2)
-setwd('/Users/amrithasubburayan/Desktop/Github/visualizations')
-data = read.csv("./simplified_dataset_v2.csv")
-data1 = read.csv("./simplified_dataset_v2.csv")
+data = read.csv("/Users/amrithasubburayan/Desktop/Github/visualizations/simplified_dataset_v2.csv")
+data1 = read.csv("/Users/amrithasubburayan/Desktop/Github/visualizations/simplified_dataset_v2.csv")
 head(data,10)
 encode_ordinal <- function(x, order = unique(x)) {
     x=as.numeric(factor(x, levels = order, exclude = NULL))
@@ -113,7 +112,7 @@ body <- dashboardBody(
                              
                              
                             
-                    tabPanel("Overall Rating for each Team", title = "Plot2",
+                    tabPanel("Overall Rating Vs Age", title = "Plot2",
                              fluidPage(sidebarPanel( selectInput(inputId = "check2",label = "Position",choices = unique_position)),
                                        mainPanel(plotOutput('plot2'), width = 8)  
                                        
