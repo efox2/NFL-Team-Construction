@@ -5,7 +5,7 @@ geneticalg <- function(target_players, selectedTeam){
   
 
 # Set working directory and read in the csv / excel file
-setwd('C:/Users/Evan/Documents/GitHub/NFL-Team-Construction/visualizations')
+setwd('/Users/amrithasubburayan/Desktop/Github/visualizations')
 df = read.csv("./simplified_dataset_v2_old.csv")
 player_size <- length(df[,1])
 
