@@ -118,7 +118,10 @@ body <- dashboardBody(
                                        mainPanel(plotOutput('plot2'), width = 8)  
                                        
                             )),
-                    tabPanel("The Oldest Players in the season", title = "Plot3",plotOutput("plot3")),
+                    tabPanel("The Oldest Players in the season", title = "Plot3",
+                             fluidPage(sidebarPanel( selectInput(inputId = "check6",label = "Position",choices = unique_position)),
+                                       mainPanel(plotOutput('plot3'), width = 8)
+                                       )),
                     tabPanel("The Youngest Players in the season", title = "Plot4",plotOutput("plot4")),
                     tabPanel("Players Rating in the NFL", title = "Plot5",
                              fluidPage(sidebarPanel( selectInput(inputId = "check4",label = "Position",choices = Team_Det)),
@@ -212,6 +215,8 @@ server <- function(input, output) {
     
     output$plot3 <- renderPlot({
         data1 %>%
+            filter(
+                Position == input$check6) %>%
             select(PlayerName, Age, Position) %>%
             group_by(PlayerName, Position) %>%
             summarise(avg_age = mean(Age)) %>%
