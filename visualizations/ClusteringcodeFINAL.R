@@ -291,7 +291,7 @@ server <- function(input, output) {
             scale_fill_manual(values = c("grey", "green")) +
             scale_y_continuous(labels = scales::dollar_format(prefix = "$")) +
             coord_flip() +
-            ggtitle("Analyzing Value For Money for cost optimization", subtitle = "The clubs who spend the least amount of wages per overall rating point") +
+            ggtitle("The clubs who spend the least amount of wages per overall rating point") +
             
             theme(legend.position = "none")
     })
