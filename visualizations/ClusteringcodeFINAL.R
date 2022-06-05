@@ -132,7 +132,7 @@ body <- dashboardBody(
                                        mainPanel(plotOutput('plot5'), width = 8)  
                              )),
                     
-                    tabPanel("The 20 clubs who spend the least amount of wages", title = "Plot6",
+                    tabPanel("Top clubs who spend the least amount of wages", title = "Plot6",
                              fluidPage(sidebarPanel( selectInput(inputId = "check3",label = "Position",choices = unique_position)),
                                        mainPanel(plotOutput('plot6'), width = 8)  
                                        
@@ -291,7 +291,7 @@ server <- function(input, output) {
             scale_fill_manual(values = c("grey", "green")) +
             scale_y_continuous(labels = scales::dollar_format(prefix = "$")) +
             coord_flip() +
-            ggtitle("Extracting Value For Money", subtitle = "The 20 clubs who spend the least amount of wages per overall rating point.\nHighlighted clubs have an average rating over 70") +
+            ggtitle("Analyzing Value For Money for cost optimization", subtitle = "The clubs who spend the least amount of wages per overall rating point") +
             
             theme(legend.position = "none")
     })
