@@ -19,6 +19,11 @@ library(DT)
 library(ggplot2)
 library(shinydashboard)
 library(plotly)
+library(shiny)
+library(shinycssloaders)
+library(bslib)
+thematic::thematic_shiny(font = "auto")
+
 
 
 source('GeneticAlg.R')
@@ -26,8 +31,8 @@ source('GeneticAlg2.R')
 source('GeneticAlg3.R')
 # Options for Spinner
 options(spinner.color="#0275D8", spinner.color.background="#ffffff", spinner.size=2)
-data = read.csv("/Users/amrithasubburayan/Desktop/Github/visualizations/simplified_dataset_v2.csv")
-data1 = read.csv("/Users/amrithasubburayan/Desktop/Github/visualizations/simplified_dataset_v2.csv")
+data = read.csv("/Users/amrithasubburayan/Downloads/Github/visualizations/simplified_dataset_v2.csv")
+data1 = read.csv("/Users/amrithasubburayan/Downloads/Github/visualizations/simplified_dataset_v2.csv")
 head(data,10)
 encode_ordinal <- function(x, order = unique(x)) {
     x=as.numeric(factor(x, levels = order, exclude = NULL))
@@ -87,7 +92,7 @@ body <- dashboardBody(
                      submitButton(text = "Create Plot for X and Y based on a Position"),
                      
                      fluidPage(titlePanel("Clustering of Players Based on a Position"),
-                               sidebarLayout(sidebarPanel(selectInput(inputId = 'Position',"Position:",choices = list("RE", "CB","HB", "QB", "WR", "LE", "RG","TE",  "MLB", "LOLB", "DT", "LT", "SS", "C","LG", "FS",  "RT", "ROLB", "K", "FB", "P")),
+                               sidebarLayout(sidebarPanel(selectInput(inputId = 'Posit',"Position:",choices = list("RE", "CB","HB", "QB", "WR", "LE", "RG","TE",  "MLB", "LOLB", "DT", "LT", "SS", "C","LG", "FS",  "RT", "ROLB", "K", "FB", "P")),
                                                           selectInput('xcol', 'X Variable', vars1),
                                                           selectInput('ycol', 'Y Variable', vars1),
                                                           numericInput(inputId = 'Clusters', 'Cluster count', 3, min = 1, max = 9),
@@ -187,6 +192,7 @@ ui <- dashboardPage(
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
+  
     
     # Exploratory ata Analsys
     output$plot1 <- renderPlot({
@@ -305,7 +311,7 @@ server <- function(input, output) {
     
     output$plot7 = renderPlot({
         
-        position_data <- reactive({subset(data,data$Position %in% input$Position)})
+        position_data <- reactive({subset(data,data$Position %in% input$Posit)})
         selected_data = reactive({position_data()[, c(input$xcol, input$ycol)]})
         Clusters = reactive({kmeans(selected_data(), input$Clusters)})
         palette(c("#E41A1C", "#377EB8", "#4DAF4A", "#984EA3","#FF7F00","#FFFF33", "#A65628", "#F781BF", "#999999"))
