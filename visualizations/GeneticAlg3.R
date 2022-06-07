@@ -7,8 +7,7 @@ library(lattice)
 geneticalg3 <- function(target_players, selectedTeam){
   # Set working directory and read in the csv / excel file
   # make sure to change the wd
-  setwd('/Users/amrithasubburayan/Desktop/Github/visualizations')
-  df = read.csv("./simplified_dataset_v2.csv")
+  df = read.csv("./simplified_dataset_v2_old.csv")
   player_size <- length(df[,1])
   
   # positions

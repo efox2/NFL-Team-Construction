@@ -7,6 +7,11 @@
 #    http://shiny.rstudio.com/
 #
 
+###############################################################################
+# SET WORK DIRECTORY TO THE LOCATION OF YOUR "NFL-Team-Construction\visualizations" folder below
+setwd("")
+###############################################################################
+
 library(magrittr) # needs to be run every time you start R and want to use %>%
 library(dplyr)
 library(ggplot2)
@@ -19,15 +24,18 @@ library(DT)
 library(ggplot2)
 library(shinydashboard)
 library(plotly)
-
+library(shiny)
+library(shinycssloaders)
+library(bslib)
+thematic::thematic_shiny(font = "auto")
 
 source('GeneticAlg.R')
 source('GeneticAlg2.R')
 source('GeneticAlg3.R')
 # Options for Spinner
 options(spinner.color="#0275D8", spinner.color.background="#ffffff", spinner.size=2)
-data = read.csv("/Users/amrithasubburayan/Desktop/Github/visualizations/simplified_dataset_v2.csv")
-data1 = read.csv("/Users/amrithasubburayan/Desktop/Github/visualizations/simplified_dataset_v2.csv")
+data = read.csv("simplified_dataset_v2.csv")
+data1 = read.csv("simplified_dataset_v2.csv")
 head(data,10)
 encode_ordinal <- function(x, order = unique(x)) {
     x=as.numeric(factor(x, levels = order, exclude = NULL))
@@ -87,7 +95,7 @@ body <- dashboardBody(
                      submitButton(text = "Create Plot for X and Y based on a Position"),
                      
                      fluidPage(titlePanel("Clustering of Players Based on a Position"),
-                               sidebarLayout(sidebarPanel(selectInput(inputId = 'Position',"Position:",choices = list("RE", "CB","HB", "QB", "WR", "LE", "RG","TE",  "MLB", "LOLB", "DT", "LT", "SS", "C","LG", "FS",  "RT", "ROLB", "K", "FB", "P")),
+                               sidebarLayout(sidebarPanel(selectInput(inputId = 'Posit',"Position:",choices = list("RE", "CB","HB", "QB", "WR", "LE", "RG","TE",  "MLB", "LOLB", "DT", "LT", "SS", "C","LG", "FS",  "RT", "ROLB", "K", "FB", "P")),
                                                           selectInput('xcol', 'X Variable', vars1),
                                                           selectInput('ycol', 'Y Variable', vars1),
                                                           numericInput(inputId = 'Clusters', 'Cluster count', 3, min = 1, max = 9),
@@ -127,7 +135,7 @@ body <- dashboardBody(
                                        mainPanel(plotOutput('plot5'), width = 8)  
                              )),
                     
-                    tabPanel("The 20 clubs who spend the least amount of wages", title = "Plot6",
+                    tabPanel("Top clubs who spend the least amount of wages", title = "Plot6",
                              fluidPage(sidebarPanel( selectInput(inputId = "check3",label = "Position",choices = unique_position)),
                                        mainPanel(plotOutput('plot6'), width = 8)  
                                        
@@ -187,6 +195,7 @@ ui <- dashboardPage(
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
+  
     
     # Exploratory ata Analsys
     output$plot1 <- renderPlot({
@@ -285,7 +294,7 @@ server <- function(input, output) {
             scale_fill_manual(values = c("grey", "green")) +
             scale_y_continuous(labels = scales::dollar_format(prefix = "$")) +
             coord_flip() +
-            ggtitle("Extracting Value For Money", subtitle = "The 20 clubs who spend the least amount of wages per overall rating point.\nHighlighted clubs have an average rating over 70") +
+            ggtitle("The clubs who spend the least amount of wages per overall rating point") +
             
             theme(legend.position = "none")
     })
@@ -305,7 +314,7 @@ server <- function(input, output) {
     
     output$plot7 = renderPlot({
         
-        position_data <- reactive({subset(data,data$Position %in% input$Position)})
+        position_data <- reactive({subset(data,data$Position %in% input$Posit)})
         selected_data = reactive({position_data()[, c(input$xcol, input$ycol)]})
         Clusters = reactive({kmeans(selected_data(), input$Clusters)})
         palette(c("#E41A1C", "#377EB8", "#4DAF4A", "#984EA3","#FF7F00","#FFFF33", "#A65628", "#F781BF", "#999999"))
