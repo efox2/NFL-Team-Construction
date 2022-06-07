@@ -46,7 +46,7 @@ geneticalg3 <- function(target_players, selectedTeam){
   # read xgboost model
   #ml_xgboost = readRDS("./xgboost_regression.rds")
   
-  ml_rpart = readRDS("../genetic_algorithm/rpart_model.rds")
+  ml_rpart = readRDS("../src/genetic_algorithm/rpart_model.rds")
   
   # Set Genetic Algorithm Parameters
   iter = 100

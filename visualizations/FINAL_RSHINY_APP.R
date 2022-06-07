@@ -9,7 +9,7 @@
 
 ###############################################################################
 # SET WORK DIRECTORY TO THE LOCATION OF YOUR "NFL-Team-Construction\visualizations" folder below
-setwd("")
+# setwd("")
 ###############################################################################
 
 library(magrittr) # needs to be run every time you start R and want to use %>%
@@ -33,6 +33,7 @@ source('GeneticAlg3.R')
 # Options for Spinner
 options(spinner.color="#0275D8", spinner.color.background="#ffffff", spinner.size=2)
 data = read.csv("./simplified_dataset_v2.csv")
+names(data)[1] = "PlayerName"
 
 clus_data <- data
 colnames(clus_data)[1] = 'PlayerName'
@@ -82,7 +83,7 @@ selectInput("PlayerTeamZone" , "PlayerTeamZone", choices = data %>%
 
 
 sidebarMenu(
-    menuItem("Summary", tabName = "Summary",icon = icon("list_alt")),
+    menuItem("About", tabName = "About",icon = icon("list_alt")),
     menuItem("Exploratory Data Analysis", tabName = "EDA",icon = icon("bar-chart-o")),
     menuItem("Clustering", tabName = "ClusteringofPlayers",icon = icon("table")),
     menuItem("Genetic Algorithm 1", tabName = "GeneticAlg1",icon = icon("refresh")),
@@ -94,11 +95,15 @@ sidebarMenu(
 
 body <- dashboardBody(
     tabItems(
-        tabItem(tabName = "Summary",
-                h2("Summary")
+        tabItem(tabName = "About",
+                align="center",
+                h2("R-Shiny application for NFL roster optimization using Genetic Algorithms.")
+                ,h2("Click on one of the menu items on the left bar to get started."),
+                h3("For Genetic Algorithms, the application demos the roster optimization for the following constraints:"),
+                h4("Team name  : New England Patriots"),
+                h4("Preset players : 50")
+                ,h4("Target players to search : 3")
         ),
-        
-        # Dinesh Should Work on this
         
         tabItem(tabName = "ClusteringofPlayers",
                navbarPage("KMeans Clustering",theme = shinytheme("united"),
@@ -157,7 +162,6 @@ body <- dashboardBody(
                 
         ),
         
-        # Sumedh -- > copy the UI of genealg1
         
         tabItem(tabName = "GeneticAlg2",
                 h2("GeneticAlg2"),
@@ -167,8 +171,7 @@ body <- dashboardBody(
                     )
                 )
         ),
-        
-        # Sanjay -- > copy the UI of genealg1
+      
         
         tabItem(tabName = "GeneticAlg3",
                 h2("GeneticAlg3"),
@@ -331,7 +334,7 @@ server <- function(input, output) {
 }
 
 
-#It appears that quarterbacks have the most agility at an older age, whereas the youngets players play a large variety of positions.
+#It appears that quarterbacks have the most agility at an older age, whereas the youngest players play a large variety of positions.
 
 # Run the application 
 shinyApp(ui = ui, server = server)
