@@ -83,12 +83,13 @@ selectInput("PlayerTeamZone" , "PlayerTeamZone", choices = data %>%
 
 
 sidebarMenu(
-    menuItem("About", tabName = "About",icon = icon("list_alt")),
+    menuItem("About", tabName = "About",icon = icon("briefcase")),
     menuItem("Exploratory Data Analysis", tabName = "EDA",icon = icon("bar-chart-o")),
     menuItem("Clustering", tabName = "ClusteringofPlayers",icon = icon("table")),
     menuItem("Genetic Algorithm 1", tabName = "GeneticAlg1",icon = icon("refresh")),
     menuItem("Genetic Algorithm 2", tabName = "GeneticAlg2",icon = icon("refresh")),
-    menuItem("Genetic Algorithm 3", tabName = "GeneticAlg3",icon = icon("refresh"))
+    menuItem("Genetic Algorithm 3", tabName = "GeneticAlg3",icon = icon("refresh")),
+    menuItem("Source Code",icon = icon("github"), href = "https://github.com/efox2/NFL-Team-Construction")
 )
 )
 
@@ -97,16 +98,30 @@ body <- dashboardBody(
     tabItems(
         tabItem(tabName = "About",
                 align="center",
-                h2("R-Shiny application for NFL roster optimization using Genetic Algorithms.")
-                ,h2("Click on one of the menu items on the left bar to get started."),
-                h3("For Genetic Algorithms, the application demos the roster optimization for the following constraints:"),
-                h4("Team name  : New England Patriots"),
-                h4("Preset players : 50")
-                ,h4("Target players to search : 3")
+                h2("R-Shiny application for NFL roster optimization using Genetic Algorithms")
+                ,h2("Click on the menu items on the left bar to get started"),
+                fluidRow(
+                  "For Genetic Algorithms, the application demos the roster optimization for the following constraints:"
+                ),
+                fluidRow(
+                  "Team name  : New England Patriots"
+                ),
+                fluidRow(
+                  "Preset players : 50",
+                ),
+                
+                fluidRow(
+                  "Target players to search : 3"
+                  
+                )
+                #h3("For Genetic Algorithms, the application demos the roster optimization for the following constraints:"),
+                #h4("Team name  : New England Patriots"),
+                #h4("Preset players : 50")
+                #,h4("Target players to search : 3")
         ),
         
         tabItem(tabName = "ClusteringofPlayers",
-               navbarPage("KMeans Clustering",theme = shinytheme("united"),
+               navbarPage("KMeans Clustering",theme =shinytheme("cerulean"),#theme = shinytheme("united"),
                            tabPanel("Clustering of Players",
                                     sidebarPanel(selectInput('xcol', 'X Variable', vars),
                                                  selectInput('ycol', 'Y Variable',vars),
@@ -185,8 +200,8 @@ body <- dashboardBody(
 )
 
 
-ui <- dashboardPage(skin = "green",
-    dashboardHeader(title = "NFL STATISTICS"),
+ui <- dashboardPage(skin = "blue",
+    dashboardHeader(title = "NFL Roster Optimization",titleWidth=250),
     sidebar,
     body 
 )
