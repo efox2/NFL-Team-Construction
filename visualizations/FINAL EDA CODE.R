@@ -7,6 +7,11 @@
 #    http://shiny.rstudio.com/
 #
 
+###############################################################################
+# SET WORK DIRECTORY TO THE LOCATION OF YOUR "NFL-Team-Construction\visualizations" folder below
+setwd("")
+###############################################################################
+
 library(magrittr) # needs to be run every time you start R and want to use %>%
 library(dplyr)
 library(ggplot2)
@@ -27,7 +32,6 @@ source('GeneticAlg2.R')
 source('GeneticAlg3.R')
 # Options for Spinner
 options(spinner.color="#0275D8", spinner.color.background="#ffffff", spinner.size=2)
-setwd('/Users/amrithasubburayan/Desktop/Github/visualizations')
 data = read.csv("./simplified_dataset_v2.csv")
 
 clus_data <- data

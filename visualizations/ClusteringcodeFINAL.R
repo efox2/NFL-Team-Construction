@@ -7,6 +7,11 @@
 #    http://shiny.rstudio.com/
 #
 
+###############################################################################
+# SET WORK DIRECTORY TO THE LOCATION OF YOUR "NFL-Team-Construction\visualizations" folder below
+setwd("")
+###############################################################################
+
 library(magrittr) # needs to be run every time you start R and want to use %>%
 library(dplyr)
 library(ggplot2)
@@ -24,15 +29,13 @@ library(shinycssloaders)
 library(bslib)
 thematic::thematic_shiny(font = "auto")
 
-
-
 source('GeneticAlg.R')
 source('GeneticAlg2.R')
 source('GeneticAlg3.R')
 # Options for Spinner
 options(spinner.color="#0275D8", spinner.color.background="#ffffff", spinner.size=2)
-data = read.csv("/Users/amrithasubburayan/Downloads/Github/visualizations/simplified_dataset_v2.csv")
-data1 = read.csv("/Users/amrithasubburayan/Downloads/Github/visualizations/simplified_dataset_v2.csv")
+data = read.csv("simplified_dataset_v2.csv")
+data1 = read.csv("simplified_dataset_v2.csv")
 head(data,10)
 encode_ordinal <- function(x, order = unique(x)) {
     x=as.numeric(factor(x, levels = order, exclude = NULL))
