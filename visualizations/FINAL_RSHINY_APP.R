@@ -152,7 +152,7 @@ body <- dashboardBody(
         #Genetic Algorithm with No ML function
         
         tabItem(tabName = "GeneticAlg1",
-                h2("Genetic Alg1"),
+                h2("Genetic Algorithm 1 - Simple Fitness Function"),
                 
                 fluidRow(
                     column(12,
@@ -164,7 +164,7 @@ body <- dashboardBody(
         
         
         tabItem(tabName = "GeneticAlg2",
-                h2("GeneticAlg2"),
+                h2("Genetic Algorithm 2 - XGBoost Regression Fitness Function"),
                 fluidRow(
                     column(12,
                            withSpinner(dataTableOutput(outputId = "genalg2"),type=4)
@@ -174,7 +174,7 @@ body <- dashboardBody(
       
         
         tabItem(tabName = "GeneticAlg3",
-                h2("GeneticAlg3"),
+                h2("Genetic Algorithm 3 - Decision Tree Regression Fitness Function"),
                 fluidRow(
                     column(12,
                            withSpinner(dataTableOutput(outputId = "genalg3"),type=4)
@@ -319,15 +319,15 @@ server <- function(input, output) {
       
     })
     
-    #Genetic ALgorithm function
+    #Genetic ALgorithm function 1
     
     output$genalg1 <- renderDataTable({ geneticalg(3,"New England Patriots")})
     
-    # Sumedh -- > Call the function for your gen alg using the structre abv
+    # Genetic Algorithm 2 - XGBoost Regression Fitness Function
     
     output$genalg2 <- renderDataTable({ geneticalg2(3,"New England Patriots")})
     
-    # Sanjay -- > Call the function for your gen alg using the structre abv
+    # Genetic Algorithm 3 - Decision Tree Regression Fitness Function
     
     output$genalg3 <- renderDataTable({ geneticalg3(3,"New England Patriots")})
     
