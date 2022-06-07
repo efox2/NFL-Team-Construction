@@ -1,0 +1,1655 @@
+"Player_Name","Team","Position","Overall_Rating","Age","Annual_Salary"
+1,"Los Angeles Rams","RE",99,29,22500000
+2,"New England Patriots","CB",99,29,13000000
+3,"Carolina Panthers","HB",99,24,16015853
+4,"Kansas Chiefs","QB",99,24,45000000
+5,"New Orleans Saints","WR",99,27,19250000
+6,"St. Louis Cardinals","WR",98,28,27250000
+7,"Houston Texans","LE",98,31,14000000
+8,"Dallas Cowboys","RG",98,29,14000000
+9,"San Francisco 49ers","TE",98,26,15000000
+10,"Seattle Seahawks","MLB",98,30,18000000
+11,"Seattle Seahawks","QB",97,31,35000000
+12,"Kansas Chiefs","TE",97,30,14312500
+13,"Chicago Bears","LOLB",97,29,23500000
+14,"Denver Broncos","LOLB",97,31,19083333
+15,"Atlanta Falcons","WR",97,31,22000000
+16,"New Orleans Saints","LE",96,31,17500000
+17,"Philadelphia Eagles","DT",96,29,17100000
+18,"Kansas Chiefs","WR",96,26,18000000
+19,"Green Bay Packers","LT",96,28,23000000
+20,"Minnesota Vikings","SS",95,31,16000000
+21,"St. Louis Cardinals","LOLB",95,30,16500000
+22,"Baltimore Ravens","RE",95,34,8000000
+23,"New Orleans Saints","LT",95,29,13000000
+24,"Los Angeles Rams","CB",94,25,20000000
+25,"Green Bay Packers","WR",94,27,14500000
+26,"Baltimore Ravens","QB",94,23,2367913
+27,"Philadelphia Eagles","C",94,32,9000000
+28,"Indianapolis Colts","LG",94,24,5972228
+29,"Dallas Cowboys","WR",93,26,20000000
+30,"Philadelphia Eagles","RG",93,31,14050000
+31,"Kansas Chiefs","SS",93,28,14000000
+32,"Baltimore Ravens","LT",93,26,19750000
+33,"Cleveland Browns","RE",93,24,25000000
+34,"Tennessee Titans","HB",93,26,12500000
+35,"Las Vegas Raiders","C",93,31,10000000
+36,"New York Jets","SS",92,24,17500000
+37,"Buffalo Bills","WR",92,26,14400000
+38,"San Francisco 49ers","CB",92,32,1350000
+39,"Tampa Bay Buccaneers","WR",92,27,16500000
+40,"Dallas Cowboys","HB",92,25,15000000
+41,"Kansas Chiefs","DT",92,26,20000000
+42,"New England Patriots","FS",92,33,11500000
+43,"Cleveland Browns","HB",92,24,12200000
+44,"San Francisco 49ers","LT",92,32,23010000
+45,"Minnesota Vikings","HB",91,25,12600000
+46,"New York Giants","HB",91,23,7798688
+47,"Los Angeles Chargers","LE",91,25,27000000
+48,"Los Angeles Chargers","WR",91,28,20025000
+49,"New Orleans Saints","RT",91,26,19200000
+50,"Minnesota Vikings","DT",91,27,9000000
+51,"Tennessee Titans","FS",91,27,14100000
+52,"Dallas Cowboys","LT",91,29,12200000
+53,"Las Vegas Raiders","LG",90,37,2120000
+54,"Minnesota Vikings","WR",90,30,16200000
+55,"Tampa Bay Buccaneers","QB",90,43,25000000
+56,"Green Bay Packers","HB",90,25,12000000
+57,"Atlanta Falcons","DT",90,27,17000000
+58,"Pittsburgh Steelers","RE",90,31,16400000
+59,"Buffalo Bills","CB",90,25,17250000
+60,"Denver Broncos","FS",90,26,15250000
+61,"Tampa Bay Buccaneers","MLB",90,30,12500000
+62,"Green Bay Packers","DT",90,24,17500000
+63,"Green Bay Packers","CB",90,23,3012684
+64,"Baltimore Ravens","CB",89,24,19500000
+65,"Green Bay Packers","QB",89,36,33500000
+66,"Los Angeles Rams","WR",89,27,15750000
+67,"New Orleans Saints","ROLB",89,31,9000000
+68,"San Francisco 49ers","RE",89,22,8387967
+69,"Cincinnati Bengals","HB",89,24,12000000
+70,"Cleveland Browns","TE",89,25,10500000
+71,"Atlanta Falcons","C",89,34,4950000
+72,"Chicago Bears","FS",89,26,14600000
+73,"Tampa Bay Buccaneers","LG",89,27,10825000
+74,"Philadelphia Eagles","RT",89,30,18000000
+75,"Minnesota Vikings","LE",89,25,14400000
+76,"Minnesota Vikings","MLB",89,28,10000000
+77,"Los Angeles Chargers","RT",88,31,10000000
+78,"New York Giants","TE",88,25,2679637
+79,"Green Bay Packers","LOLB",88,27,16500000
+80,"St. Louis Cardinals","CB",88,30,8000000
+81,"Chicago Bears","LE",88,30,12000000
+82,"New England Patriots","MLB",88,30,8875000
+83,"Buffalo Bills","FS",88,29,9625000
+84,"Las Vegas Raiders","HB",88,22,2983350
+85,"Seattle Seahawks","WR",88,27,17250000
+86,"Miami Dolphins","CB",88,27,16500000
+87,"Cincinnati Bengals","WR",88,32,6000000
+88,"New Orleans Saints","HB",88,25,15000000
+89,"San Francisco 49ers","MLB",87,23,19045000
+90,"Indianapolis Colts","DT",87,26,21000000
+91,"Jacksonville Jaguars","C",87,28,10340600
+92,"Cleveland Browns","HB",87,25,6000000
+93,"Tampa Bay Buccaneers","DT",87,25,17750000
+94,"Dallas Cowboys","RT",87,27,10000000
+95,"Washington Commanders","RG",87,28,18036000
+96,"Atlanta Falcons","QB",87,35,30000000
+97,"Philadelphia Eagles","LE",87,32,9250000
+98,"Pittsburgh Steelers","LE",87,27,12000000
+99,"Denver Broncos","SS",87,32,5000000
+100,"Baltimore Ravens","K",87,30,5000000
+101,"Pittsburgh Steelers","FS",87,23,4111942
+102,"Las Vegas Raiders","RT",87,27,9000000
+103,"New Orleans Saints","TE",87,33,4500000
+104,"Seattle Seahawks","HB",86,25,5212500
+105,"Cleveland Browns","LG",86,28,16000000
+106,"Los Angeles Rams","WR",86,28,16250000
+107,"Baltimore Ravens","TE",86,24,14000000
+108,"Pittsburgh Steelers","LOLB",86,25,28002750
+109,"San Francisco 49ers","LE",86,26,17000000
+110,"Green Bay Packers","SS",86,27,9000000
+111,"Detroit Lions","WR",86,26,18000000
+112,"Houston Texans","QB",86,24,39000000
+113,"Detroit Lions","RE",86,27,18000000
+114,"Cleveland Browns","CB",86,23,7291339
+115,"Baltimore Ravens","DT",86,31,6000000
+116,"San Francisco 49ers","FB",86,29,5400000
+117,"New Orleans Saints","CB",86,24,19400000
+118,"St. Louis Cardinals","FS",86,24,14750000
+119,"Washington Commanders","FS",86,25,10000000
+120,"Atlanta Falcons","MLB",86,25,14250000
+121,"Los Angeles Rams","P",86,30,2583333
+122,"Los Angeles Rams","LT",86,38,8500000
+123,"New Orleans Saints","SS",85,32,8000000
+124,"New Orleans Saints","FS",85,23,10612000
+125,"Cleveland Browns","WR",85,27,15100000
+126,"Indianapolis Colts","C",85,27,12412500
+127,"Dallas Cowboys","DT",85,32,1250000
+128,"Seattle Seahawks","C",54,26,9500000
+129,"Baltimore Ravens","CB",85,27,14000000
+130,"New England Patriots","CB",85,33,1212500
+131,"Denver Broncos","HB",85,26,3250000
+132,"Carolina Panthers","WR",85,23,2792829
+133,"San Francisco 49ers","LE",85,29,7000000
+134,"San Francisco 49ers","RT",85,25,4585469
+135,"Los Angeles Chargers","HB",85,25,6125000
+136,"Los Angeles Chargers","DT",85,31,8500000
+137,"Indianapolis Colts","RE",85,31,2075000
+138,"New York Giants","RG",85,30,7500000
+139,"Buffalo Bills","SS",85,29,9750000
+140,"Tampa Bay Buccaneers","ROLB",85,27,17000000
+141,"Los Angeles Chargers","TE",85,25,12500000
+142,"Las Vegas Raiders","TE",85,27,7575001
+143,"Indianapolis Colts","HB",85,24,2000000
+144,"Indianapolis Colts","LOLB",85,25,19700000
+145,"New York Jets","MLB",85,28,17000000
+146,"New England Patriots","LG",85,27,16000000
+147,"Houston Texans","WR",85,26,16200000
+148,"Houston Texans","LT",85,26,22000000
+149,"Chicago Bears","DT",84,26,10510000
+150,"Seattle Seahawks","CB",84,25,13333333
+151,"Green Bay Packers","ROLB",84,27,10250000
+152,"Houston Texans","FS",84,23,1015856
+153,"San Francisco 49ers","HB",84,28,2900000
+154,"Tennessee Titans","P",84,34,3183333
+155,"Philadelphia Eagles","QB",84,27,32000000
+156,"New England Patriots","C",84,28,4750000
+157,"Detroit Lions","CB",84,27,2250000
+158,"Dallas Cowboys","QB",84,27,40000000
+159,"Denver Broncos","WR",84,24,15000000
+160,"Miami Dolphins","WR",84,27,10166667
+161,"Baltimore Ravens","P",84,38,2475000
+162,"Tennessee Titans","LT",84,29,16000000
+163,"Denver Broncos","CB",84,29,3500000
+164,"Cincinnati Bengals","DT",84,26,13250000
+165,"Carolina Panthers","WR",84,27,14750000
+166,"Cincinnati Bengals","WR",83,25,10750000
+167,"San Francisco 49ers","HB",83,27,1100000
+168,"Jacksonville Jaguars","HB",83,25,3250000
+169,"Jacksonville Jaguars","LG",83,28,9000000
+170,"Washington Commanders","P",83,30,3312500
+171,"New Orleans Saints","P",83,34,1075000
+172,"Chicago Bears","MLB",83,23,4619292
+173,"Baltimore Ravens","CB",83,32,2500000
+174,"San Francisco 49ers","QB",83,28,27500000
+175,"San Francisco 49ers","FS",83,29,9500000
+176,"Philadelphia Eagles","WR",83,33,2000000
+177,"Atlanta Falcons","WR",83,25,2725183
+178,"Pittsburgh Steelers","CB",83,31,11000000
+179,"New England Patriots","CB",83,26,7000000
+180,"Dallas Cowboys","LOLB",83,24,2961946
+181,"Detroit Lions","LOLB",83,30,1075000
+182,"Tennessee Titans","CB",83,24,13000000
+183,"Kansas Chiefs","RE",83,27,20800000
+184,"Jacksonville Jaguars","RE",83,25,13000000
+185,"Detroit Lions","C",83,24,13500000
+186,"Los Angeles Rams","LE",83,29,8000000
+187,"Washington Commanders","DT",83,23,3604590
+188,"Buffalo Bills","WR",83,31,7250000
+189,"Detroit Lions","CB",83,29,1075000
+190,"Cincinnati Bengals","LE",82,31,6800000
+191,"Buffalo Bills","WR",82,30,252000
+192,"Buffalo Bills","C",82,28,7062500
+193,"Miami Dolphins","CB",82,27,15050000
+194,"Indianapolis Colts","FS",82,24,920000
+195,"Pittsburgh Steelers","LT",82,31,7000000
+196,"San Francisco 49ers","LOLB",82,26,1127500
+197,"Minnesota Vikings","QB",82,32,33000000
+198,"Detroit Lions","HB",82,23,252000
+199,"Indianapolis Colts","RT",82,24,17500000
+200,"Philadelphia Eagles","RG",82,38,1750000
+201,"Jacksonville Jaguars","MLB",82,26,10750000
+202,"Carolina Panthers","CB",82,24,1203132
+203,"Buffalo Bills","HB",82,22,974500
+204,"New England Patriots","HB",82,28,2462500
+205,"Kansas Chiefs","K",82,25,4055000
+206,"Los Angeles Rams","TE",82,27,7250000
+207,"Pittsburgh Steelers","K",82,29,4201500
+208,"San Francisco 49ers","K",82,37,3625000
+209,"Las Vegas Raiders","CB",82,29,3000000
+210,"Dallas Cowboys","CB",82,25,7250000
+211,"St. Louis Cardinals","HB",82,26,5500000
+212,"Tampa Bay Buccaneers","C",82,29,10500000
+213,"Philadelphia Eagles","DT",82,27,13000000
+214,"New York Giants","WR",82,27,10250000
+215,"Washington Commanders","DT",82,25,18000000
+216,"New Orleans Saints","DT",82,26,5500000
+217,"Houston Texans","MLB",82,27,990000
+218,"Chicago Bears","ROLB",82,30,14000000
+219,"Buffalo Bills","RE",82,32,10750000
+220,"Washington Commanders","WR",82,23,961918
+221,"Pittsburgh Steelers","CB",81,26,6000000
+222,"Tennessee Titans","WR",81,23,1413092
+223,"San Francisco 49ers","SS",81,28,1127500
+224,"Pittsburgh Steelers","HB",81,25,1750000
+225,"Los Angeles Chargers","WR",81,25,4937514
+226,"Dallas Cowboys","MLB",81,25,990000
+227,"Philadelphia Eagles","TE",81,25,14250000
+228,"Baltimore Ravens","FB",81,26,3650000
+229,"Chicago Bears","C",81,28,10250000
+230,"Buffalo Bills","DT",81,22,4918789
+231,"Denver Broncos","ROLB",81,24,6817810
+232,"New York Jets","FS",81,27,10612000
+233,"Atlanta Falcons","SS",81,28,1490000
+234,"Jacksonville Jaguars","ROLB",81,24,14250000
+235,"Detroit Lions","K",81,36,3250000
+236,"Detroit Lions","DT",81,27,1127500
+237,"Houston Texans","ROLB",81,30,1075000
+238,"Houston Texans","WR",81,28,1075000
+239,"Cincinnati Bengals","CB",81,27,13500000
+240,"Kansas Chiefs","WR",81,27,5000000
+241,"Washington Commanders","SS",81,26,14000000
+242,"Dallas Cowboys","WR",81,24,880995
+243,"Buffalo Bills","QB",77,24,43000000
+244,"New England Patriots","RE",81,30,2875000
+245,"Seattle Seahawks","ROLB",81,31,3255000
+246,"Chicago Bears","MLB",80,30,7250000
+247,"New York Giants","SS",80,24,2585559
+248,"Denver Broncos","CB",80,28,6000000
+249,"New Orleans Saints","HB",80,29,1075000
+250,"Los Angeles Chargers","RG",80,27,3000000
+251,"New York Giants","RE",80,26,21000000
+252,"Green Bay Packers","LG",80,24,1695655
+253,"Green Bay Packers","P",80,23,920000
+254,"Minnesota Vikings","LOLB",80,28,10000000
+255,"Cincinnati Bengals","RE",80,25,15000000
+256,"Buffalo Bills","MLB",80,22,3164886
+257,"Tennessee Titans","QB",80,32,29500000
+258,"Tampa Bay Buccaneers","LOLB",80,31,12500000
+259,"New England Patriots","HB",80,25,2406674
+260,"New York Giants","DT",80,26,10500000
+261,"Carolina Panthers","WR",80,24,11500000
+262,"New England Patriots","LE",80,29,1120000
+263,"Washington Commanders","RE",80,21,8640900
+264,"New York Jets","CB",80,29,1075000
+265,"Dallas Cowboys","K",80,32,2500000
+266,"New York Jets","WR",80,27,5500000
+267,"Seattle Seahawks","DT",80,26,5500000
+268,"Houston Texans","CB",80,28,10500000
+269,"Detroit Lions","FS",80,29,1212500
+270,"Tampa Bay Buccaneers","TE",80,25,2773714
+271,"Carolina Panthers","RT",80,26,17000000
+272,"Baltimore Ravens","WR",80,23,2946835
+273,"Tennessee Titans","C",80,31,6750000
+274,"San Francisco 49ers","WR",80,24,1924339
+275,"Philadelphia Eagles","HB",80,23,1340058
+276,"Seattle Seahawks","HB",80,29,2250000
+277,"Detroit Lions","WR",80,34,1800000
+278,"Los Angeles Rams","ROLB",80,25,6000000
+279,"Seattle Seahawks","P",80,24,3674765
+280,"Pittsburgh Steelers","ROLB",80,27,16500000
+281,"Cincinnati Bengals","FS",79,23,12911000
+282,"Miami Dolphins","HB",79,25,1055000
+283,"Atlanta Falcons","RE",79,24,4250000
+284,"New York Giants","K",79,25,1035000
+285,"Los Angeles Rams","RT",79,28,8125000
+286,"Seattle Seahawks","WR",79,22,1146513
+287,"Tennessee Titans","WR",79,25,12500000
+288,"Tennessee Titans","DT",79,28,4050000
+289,"New York Jets","CB",79,27,252000
+290,"Cincinnati Bengals","SS",79,25,6000000
+291,"Tampa Bay Buccaneers","HB",79,23,1767982
+292,"Carolina Panthers","RE",79,22,3385046
+293,"New England Patriots","LT",79,24,2860478
+294,"Tennessee Titans","MLB",79,24,2894298
+295,"Miami Dolphins","TE",79,24,10931000
+296,"Buffalo Bills","LOLB",79,26,10375000
+297,"Cleveland Browns","P",79,23,1065000
+298,"Cleveland Browns","C",79,29,10850000
+299,"New York Jets","DT",79,34,1212500
+300,"Baltimore Ravens","LE",79,30,4000000
+301,"Las Vegas Raiders","QB",79,29,25005000
+302,"Washington Commanders","CB",79,26,10000000
+303,"Miami Dolphins","HB",79,25,990000
+304,"Jacksonville Jaguars","WR",79,26,1127500
+305,"Carolina Panthers","K",79,33,4666667
+306,"Las Vegas Raiders","DT",79,25,1045000
+307,"Las Vegas Raiders","RG",79,29,7525000
+308,"Denver Broncos","MLB",78,28,3384000
+309,"Cleveland Browns","QB",78,25,8170745
+310,"Tampa Bay Buccaneers","MLB",78,22,7328954
+311,"St. Louis Cardinals","WR",78,23,1473719
+312,"Detroit Lions","LE",78,24,1035000
+313,"Las Vegas Raiders","MLB",78,26,11750000
+314,"Pittsburgh Steelers","WR",78,24,1125337
+315,"Cleveland Browns","TE",78,24,10931000
+316,"Kansas Chiefs","DT",78,24,930600
+317,"Chicago Bears","HB",78,23,1003845
+318,"Green Bay Packers","HB",78,25,3000000
+319,"Green Bay Packers","C",78,29,12500000
+320,"New Orleans Saints","DT",78,27,9000000
+321,"Houston Texans","WR",78,30,9000000
+322,"New England Patriots","QB",78,31,8250000
+323,"New Orleans Saints","CB",78,31,7500000
+324,"Cincinnati Bengals","CB",78,28,14000000
+325,"Kansas Chiefs","FS",78,24,1153817
+326,"New England Patriots","FS",78,28,4250000
+327,"San Francisco 49ers","HB",78,28,990000
+328,"Carolina Panthers","DT",78,22,5905351
+329,"Baltimore Ravens","TE",78,27,6500000
+330,"Baltimore Ravens","ROLB",78,31,1075000
+331,"New Orleans Saints","C",78,23,1522646
+332,"Seattle Seahawks","TE",78,24,777567
+333,"Chicago Bears","LG",78,22,1737539
+334,"Cleveland Browns","RT",78,26,8000000
+335,"St. Louis Cardinals","SS",78,22,5166014
+336,"Philadelphia Eagles","CB",78,24,7500000
+337,"New York Giants","LG",78,24,1862685
+338,"New Orleans Saints","K",78,26,4050000
+339,"New Orleans Saints","LG",78,26,11500000
+340,"Buffalo Bills","CB",78,25,1750000
+341,"Atlanta Falcons","FS",78,27,1127500
+342,"Washington Commanders","HB",78,35,252000
+343,"Seattle Seahawks","HB",78,24,2691359
+344,"Philadelphia Eagles","WR",78,29,1212500
+345,"Atlanta Falcons","LT",78,28,14500000
+346,"New York Giants","WR",78,23,688719
+347,"New York Jets","RE",78,22,8132343
+348,"Los Angeles Rams","RG",78,28,990000
+349,"San Francisco 49ers","WR",77,24,920000
+350,"Buffalo Bills","LG",77,29,1127500
+351,"Dallas Cowboys","CB",77,25,4500000
+352,"Buffalo Bills","CB",77,24,8000000
+353,"Chicago Bears","HB",77,25,5750000
+354,"Baltimore Ravens","HB",77,25,4128000
+355,"Houston Texans","HB",77,28,5000000
+356,"New England Patriots","MLB",77,24,690988
+357,"Las Vegas Raiders","WR",77,27,11000000
+358,"Tennessee Titans","WR",77,27,1190000
+359,"Denver Broncos","LG",77,25,1785571
+360,"Cleveland Browns","SS",77,26,293000
+361,"Seattle Seahawks","CB",77,25,689681
+362,"Tampa Bay Buccaneers","CB",77,23,1844000
+363,"Baltimore Ravens","SS",77,25,5100000
+364,"Detroit Lions","SS",77,25,877997
+365,"Jacksonville Jaguars","DT",77,33,2500000
+366,"Los Angeles Rams","LOLB",77,27,16000000
+367,"Cincinnati Bengals","CB",77,26,1127500
+368,"Kansas Chiefs","WR",77,25,1127500
+369,"Atlanta Falcons","DT",77,27,2625000
+370,"Detroit Lions","TE",77,23,4955307
+371,"Carolina Panthers","P",77,28,1400000
+372,"Las Vegas Raiders","LE",77,23,825566
+373,"St. Louis Cardinals","QB",77,23,8789661
+374,"Dallas Cowboys","FS",77,25,1750000
+375,"Green Bay Packers","K",77,35,4300000
+376,"New Orleans Saints","RE",77,23,3435475
+377,"Minnesota Vikings","C",77,25,3220718
+378,"Buffalo Bills","LT",77,26,14575000
+379,"Denver Broncos","RT",77,28,2245000
+380,"Cleveland Browns","DT",77,26,6200000
+381,"Tampa Bay Buccaneers","TE",77,29,6016667
+382,"Chicago Bears","CB",77,31,1075000
+383,"Los Angeles Chargers","LOLB",77,23,1439895
+384,"Cincinnati Bengals","HB",77,28,1212500
+385,"New York Giants","LOLB",77,29,2500000
+386,"San Francisco 49ers","WR",76,25,5000000
+387,"Chicago Bears","RT",76,31,2500000
+388,"Jacksonville Jaguars","CB",76,21,5129047
+389,"Kansas Chiefs","CB",76,24,3384000
+390,"St. Louis Cardinals","HB",76,24,728089
+391,"Las Vegas Raiders","DT",76,28,3500000
+392,"Las Vegas Raiders","LE",76,27,8333333
+393,"Pittsburgh Steelers","WR",76,24,1070241
+394,"Cincinnati Bengals","QB",76,23,9047534
+395,"Tampa Bay Buccaneers","CB",76,25,889713
+396,"Dallas Cowboys","CB",76,26,5166667
+397,"Atlanta Falcons","HB",76,24,1022500
+398,"Miami Dolphins","MLB",76,24,1092500
+399,"Atlanta Falcons","TE",76,27,2759008
+400,"Green Bay Packers","TE",76,36,4000000
+401,"New England Patriots","DT",76,26,3750000
+402,"Pittsburgh Steelers","MLB",76,22,4717942
+403,"Cincinnati Bengals","WR",76,23,615000
+404,"New Orleans Saints","QB",76,26,5500000
+405,"Las Vegas Raiders","ROLB",76,27,7000000
+406,"San Francisco 49ers","ROLB",76,23,710428
+407,"San Francisco 49ers","DT",76,22,3872175
+408,"San Francisco 49ers","P",76,28,821018
+409,"Cincinnati Bengals","LOLB",76,31,1075000
+410,"Denver Broncos","RG",76,28,7100000
+411,"Denver Broncos","K",76,29,4300000
+412,"Cleveland Browns","DT",76,25,1187500
+413,"St. Louis Cardinals","ROLB",76,29,6666667
+414,"Cincinnati Bengals","SS",76,29,1075000
+415,"Cleveland Browns","SS",76,32,1075000
+416,"Jacksonville Jaguars","CB",76,30,1140000
+417,"Baltimore Ravens","CB",76,26,4665000
+418,"Seattle Seahawks","SS",76,29,252000
+419,"Kansas Chiefs","LE",76,29,1075000
+420,"Indianapolis Colts","DT",76,30,7666667
+421,"Miami Dolphins","DT",76,25,7500000
+422,"New England Patriots","RT",76,32,6500000
+423,"Chicago Bears","WR",76,25,1035000
+424,"St. Louis Cardinals","MLB",76,28,4500000
+425,"Los Angeles Rams","QB",76,25,33500000
+426,"St. Louis Cardinals","P",76,38,1500000
+427,"St. Louis Cardinals","LG",76,30,7512500
+428,"Buffalo Bills","CB",76,32,1500000
+429,"San Francisco 49ers","CB",76,29,2377500
+430,"Detroit Lions","CB",76,21,8382132
+431,"Philadelphia Eagles","SS",76,26,990000
+432,"Kansas Chiefs","WR",76,22,1248763
+433,"Washington Commanders","HB",76,27,1635000
+434,"Miami Dolphins","WR",76,28,3000000
+435,"Jacksonville Jaguars","WR",76,27,1500000
+436,"New York Jets","LE",76,29,3500000
+437,"Carolina Panthers","MLB",76,26,13540000
+438,"Washington Commanders","RE",76,23,2910315
+439,"San Francisco 49ers","CB",75,24,4692000
+440,"Los Angeles Rams","FS",75,22,1168424
+441,"Dallas Cowboys","DT",75,27,920000
+442,"Seattle Seahawks","WR",75,25,705000
+443,"Pittsburgh Steelers","P",75,29,990000
+444,"Dallas Cowboys","CB",75,25,252000
+445,"Indianapolis Colts","CB",75,24,1979114
+446,"Carolina Panthers","CB",75,25,1200000
+447,"Miami Dolphins","FS",75,27,1475000
+448,"Indianapolis Colts","LE",75,25,1304601
+449,"Dallas Cowboys","HB",75,23,797582
+450,"Carolina Panthers","HB",75,27,2750000
+451,"New England Patriots","HB",75,30,2500000
+452,"Los Angeles Rams","HB",75,27,1750000
+453,"Baltimore Ravens","HB",75,21,1432360
+454,"Jacksonville Jaguars","WR",75,27,5500000
+455,"Baltimore Ravens","LOLB",75,25,5500000
+456,"Washington Commanders","RT",75,29,3600000
+457,"Seattle Seahawks","DT",75,24,6172500
+458,"San Francisco 49ers","RE",75,25,3250000
+459,"Denver Broncos","WR",75,21,3798240
+460,"Denver Broncos","P",75,30,2350000
+461,"St. Louis Cardinals","DT",75,32,1212500
+462,"St. Louis Cardinals","TE",75,26,2333333
+463,"Carolina Panthers","QB",75,27,11500000
+464,"Cleveland Browns","CB",75,22,1614669
+465,"Dallas Cowboys","RE",75,27,1000000
+466,"Denver Broncos","HB",75,24,985005
+467,"New York Jets","WR",75,26,990000
+468,"New England Patriots","RE",75,25,956828
+469,"Los Angeles Rams","WR",75,25,1750000
+470,"Washington Commanders","C",75,27,10125000
+471,"Cincinnati Bengals","RE",75,25,10000000
+472,"Cleveland Browns","ROLB",75,22,707201
+473,"Detroit Lions","CB",75,29,1595000
+474,"Indianapolis Colts","HB",75,23,6200000
+475,"New York Giants","RE",75,24,1011970
+476,"Las Vegas Raiders","DT",75,25,5000000
+477,"Las Vegas Raiders","WR",75,25,2500000
+478,"Seattle Seahawks","K",75,29,3862500
+479,"Houston Texans","MLB",75,25,14500000
+480,"Minnesota Vikings","RT",75,24,18500000
+481,"Minnesota Vikings","WR",75,25,990000
+482,"Chicago Bears","WR",75,29,3000000
+483,"Denver Broncos","LE",75,29,9000000
+484,"Philadelphia Eagles","CB",75,26,1075000
+485,"Las Vegas Raiders","CB",75,22,1814787
+486,"Dallas Cowboys","WR",75,21,3502504
+487,"Miami Dolphins","LE",75,26,7500000
+488,"Green Bay Packers","LE",75,26,6775000
+489,"Tennessee Titans","TE",75,25,12500000
+490,"Chicago Bears","RE",74,23,689870
+491,"Denver Broncos","TE",74,22,3147681
+492,"Indianapolis Colts","CB",74,30,4770000
+493,"Washington Commanders","CB",74,26,1127500
+494,"Las Vegas Raiders","FS",74,30,1350000
+495,"Kansas Chiefs","HB",74,21,2705394
+496,"Detroit Lions","HB",74,21,2134730
+497,"Washington Commanders","HB",74,26,990000
+498,"New York Jets","C",74,27,9000000
+499,"Carolina Panthers","RE",74,22,2049707
+500,"Seattle Seahawks","TE",74,26,990000
+501,"Buffalo Bills","DT",74,24,808760
+502,"Pittsburgh Steelers","SS",74,23,2674448
+503,"New Orleans Saints","CB",74,27,2300000
+504,"Indianapolis Colts","WR",74,25,3384000
+505,"Jacksonville Jaguars","CB",74,30,1075000
+506,"Philadelphia Eagles","K",74,25,4030000
+507,"New York Giants","ROLB",74,28,1500000
+508,"New York Jets","MLB",74,28,990000
+509,"Detroit Lions","LT",74,26,14912500
+510,"Las Vegas Raiders","FB",74,24,588333
+511,"Los Angeles Rams","DT",74,25,6000000
+512,"Houston Texans","TE",74,34,252000
+513,"San Francisco 49ers","WR",74,26,1135000
+514,"Buffalo Bills","RG",74,28,4800000
+515,"Cleveland Browns","WR",74,25,2377500
+516,"Tampa Bay Buccaneers","P",74,26,2750000
+517,"Miami Dolphins","QB",74,37,10000000
+518,"Jacksonville Jaguars","SS",74,23,847008
+519,"San Francisco 49ers","CB",74,29,5500000
+520,"Los Angeles Rams","CB",74,29,4500000
+521,"Miami Dolphins","MLB",74,23,12500000
+522,"Miami Dolphins","P",74,26,1825000
+523,"Philadelphia Eagles","HB",74,25,990000
+524,"Minnesota Vikings","HB",74,22,867795
+525,"Jacksonville Jaguars","RE",74,21,3336153
+526,"New York Jets","ROLB",74,26,3000000
+527,"Green Bay Packers","WR",74,25,669389
+528,"Las Vegas Raiders","WR",74,24,708987
+529,"New Orleans Saints","RE",74,25,15000000
+530,"New Orleans Saints","DT",74,33,1075000
+531,"Seattle Seahawks","LOLB",74,32,1075000
+532,"Seattle Seahawks","LE",74,29,3810000
+533,"Tampa Bay Buccaneers","LE",74,29,5500000
+534,"Las Vegas Raiders","SS",74,29,1075000
+535,"Indianapolis Colts","P",74,25,2900000
+536,"Jacksonville Jaguars","CB",74,24,2000000
+537,"New York Giants","FS",74,22,2097762
+538,"Indianapolis Colts","SS",74,24,822009
+539,"Miami Dolphins","RE",74,24,3859774
+540,"Los Angeles Chargers","HB",74,24,615000
+541,"Jacksonville Jaguars","DT",74,24,2538739
+542,"New England Patriots","WR",74,27,1127500
+543,"New England Patriots","WR",74,22,2524587
+544,"San Francisco 49ers","WR",74,30,1075000
+545,"St. Louis Cardinals","K",74,25,990000
+546,"Minnesota Vikings","CB",74,23,2466871
+547,"Miami Dolphins","SS",74,27,4916667
+548,"Minnesota Vikings","WR",74,21,3280702
+549,"Los Angeles Chargers","ROLB",73,27,1750000
+550,"Indianapolis Colts","RG",73,28,5400000
+551,"Atlanta Falcons","CB",73,24,819922
+552,"Philadelphia Eagles","WR",73,23,1237806
+553,"Philadelphia Eagles","WR",73,21,3317670
+554,"New York Giants","ROLB",73,24,1020871
+555,"New Orleans Saints","RE",73,26,1035000
+556,"Houston Texans","LOLB",73,27,1127500
+557,"Buffalo Bills","TE",73,32,1800000
+558,"New York Jets","QB",73,23,7561924
+559,"Kansas Chiefs","TE",73,25,990000
+560,"New England Patriots","SS",73,24,2082976
+561,"Philadelphia Eagles","CB",73,25,990000
+562,"Miami Dolphins","WR",73,28,3500000
+563,"Tampa Bay Buccaneers","SS",73,23,781814
+564,"Jacksonville Jaguars","FS",73,26,252000
+565,"Philadelphia Eagles","LE",73,23,13333333
+566,"Indianapolis Colts","HB",73,21,1957289
+567,"Carolina Panthers","K",73,24,850000
+568,"Las Vegas Raiders","LT",73,24,18005000
+569,"Houston Texans","P",73,31,1075000
+570,"Buffalo Bills","WR",73,26,1022500
+571,"St. Louis Cardinals","RE",73,27,10000000
+572,"Miami Dolphins","QB",73,22,7568859
+573,"Dallas Cowboys","CB",73,26,1250000
+574,"New York Giants","CB",73,22,822715
+575,"Cleveland Browns","CB",73,28,3250000
+576,"Baltimore Ravens","C",73,27,990000
+577,"Houston Texans","RE",73,22,1986863
+578,"Houston Texans","WR",73,23,965000
+579,"Chicago Bears","P",73,29,1750000
+580,"Buffalo Bills","DT",73,30,6200000
+581,"Los Angeles Chargers","CB",73,25,8400000
+582,"Las Vegas Raiders","CB",73,29,1275000
+583,"Miami Dolphins","LG",73,26,10000000
+584,"Philadelphia Eagles","RE",73,25,687237
+585,"New York Jets","LE",73,26,968930
+586,"Detroit Lions","ROLB",73,29,1212500
+587,"Washington Commanders","K",73,29,1075000
+588,"New Orleans Saints","MLB",73,25,1750000
+589,"Minnesota Vikings","FB",73,27,3000000
+590,"Cincinnati Bengals","K",73,30,1075000
+591,"Cincinnati Bengals","MLB",73,24,1236398
+592,"St. Louis Cardinals","LT",73,26,14750000
+593,"Las Vegas Raiders","SS",73,23,2873799
+594,"Chicago Bears","CB",73,21,1617194
+595,"New York Jets","CB",73,24,850000
+596,"St. Louis Cardinals","CB",73,31,990000
+597,"Tampa Bay Buccaneers","FS",73,24,874509
+598,"St. Louis Cardinals","FS",73,22,715730
+599,"Miami Dolphins","WR",73,23,588333
+600,"Atlanta Falcons","ROLB",73,25,651657
+601,"Los Angeles Rams","HB",73,21,1543261
+602,"Las Vegas Raiders","RE",73,23,7840204
+603,"Chicago Bears","TE",72,29,1075000
+604,"Chicago Bears","K",72,24,780000
+605,"Cincinnati Bengals","WR",72,27,990000
+606,"Cincinnati Bengals","TE",72,27,6100000
+607,"Buffalo Bills","RT",72,34,1750000
+608,"Los Angeles Chargers","MLB",72,25,794702
+609,"Cincinnati Bengals","CB",72,24,669389
+610,"Houston Texans","FS",72,26,6000000
+611,"Atlanta Falcons","RG",72,23,3677189
+612,"Green Bay Packers","HB",72,22,1321458
+613,"Baltimore Ravens","ROLB",72,24,913702
+614,"Houston Texans","K",72,26,4412500
+615,"Cincinnati Bengals","LT",72,22,4407542
+616,"Buffalo Bills","LE",72,21,1469326
+617,"Buffalo Bills","ROLB",72,29,6000000
+618,"Buffalo Bills","WR",72,25,1127500
+619,"St. Louis Cardinals","WR",72,23,1157468
+620,"Indianapolis Colts","MLB",72,24,905529
+621,"Cleveland Browns","FS",72,21,1866266
+622,"Los Angeles Rams","FS",72,21,1078520
+623,"Indianapolis Colts","HB",72,26,252000
+624,"Baltimore Ravens","HB",72,22,815414
+625,"New York Jets","RE",72,25,658564
+626,"New England Patriots","LOLB",72,29,990000
+627,"New England Patriots","ROLB",72,21,1347334
+628,"Baltimore Ravens","WR",72,23,893732
+629,"Washington Commanders","LOLB",72,24,653252
+630,"Pittsburgh Steelers","LE",72,33,2750000
+631,"Houston Texans","LE",72,23,704101
+632,"Tennessee Titans","RE",72,31,1075000
+633,"Los Angeles Chargers","MLB",72,27,3042500
+634,"Los Angeles Chargers","DT",72,23,2855540
+635,"Kansas Chiefs","ROLB",72,27,2000000
+636,"New York Jets","LT",72,21,4611512
+637,"Green Bay Packers","LOLB",72,22,3969328
+638,"Green Bay Packers","MLB",72,28,3000000
+639,"Houston Texans","ROLB",72,25,825000
+640,"San Francisco 49ers","WR",72,22,3132838
+641,"Indianapolis Colts","WR",72,23,1193984
+642,"Miami Dolphins","K",72,24,4400000
+643,"Las Vegas Raiders","CB",72,27,990000
+644,"New York Giants","ROLB",72,23,885695
+645,"Philadelphia Eagles","HB",72,25,920000
+646,"Pittsburgh Steelers","HB",72,24,1035000
+647,"New York Jets","TE",72,24,792842
+648,"New York Jets","LG",72,28,3500000
+649,"Baltimore Ravens","MLB",72,21,3040418
+650,"Washington Commanders","LOLB",72,24,688721
+651,"Seattle Seahawks","LOLB",72,23,906531
+652,"Pittsburgh Steelers","WR",72,25,920000
+653,"Tennessee Titans","FB",72,24,850000
+654,"San Francisco 49ers","DT",72,25,3500000
+655,"Chicago Bears","QB",72,26,2500000
+656,"New York Giants","QB",72,23,6416014
+657,"Dallas Cowboys","TE",72,26,5500000
+658,"Washington Commanders","SS",72,26,252000
+659,"New York Jets","CB",72,24,1035000
+660,"Philadelphia Eagles","SS",72,26,6000000
+661,"New York Jets","SS",72,28,1090000
+662,"New York Giants","MLB",72,26,10250000
+663,"New York Jets","TE",72,30,3040824
+664,"New England Patriots","P",72,23,702520
+665,"Las Vegas Raiders","LOLB",72,24,920000
+666,"Washington Commanders","WR",72,23,895000
+667,"New Orleans Saints","DT",72,26,5500000
+668,"Minnesota Vikings","LG",72,26,4500000
+669,"Chicago Bears","LE",71,27,7800000
+670,"Buffalo Bills","LG",71,28,8000000
+671,"Denver Broncos","RG",71,21,875198
+672,"Green Bay Packers","QB",71,21,3095868
+673,"Indianapolis Colts","DT",71,25,1091514
+674,"Dallas Cowboys","ROLB",71,29,1120000
+675,"Atlanta Falcons","CB",71,23,1159163
+676,"New England Patriots","SS",71,28,1750000
+677,"New York Giants","RT",71,21,8086397
+678,"New York Jets","P",71,22,868025
+679,"Baltimore Ravens","DT",71,29,1075000
+680,"Baltimore Ravens","MLB",71,30,1127500
+681,"Washington Commanders","WR",71,23,825000
+682,"New Orleans Saints","RG",71,21,3169800
+683,"Houston Texans","MLB",71,26,990000
+684,"Chicago Bears","LE",71,29,1750000
+685,"Buffalo Bills","P",71,24,1020000
+686,"Buffalo Bills","TE",71,27,2000000
+687,"Los Angeles Chargers","K",71,25,920000
+688,"Seattle Seahawks","FS",71,23,1559162
+689,"Kansas Chiefs","SS",71,30,2462500
+690,"Baltimore Ravens","RE",71,22,1213328
+691,"Seattle Seahawks","MLB",71,22,3058901
+692,"Pittsburgh Steelers","RT",71,28,7000000
+693,"Houston Texans","RT",71,24,3056388
+694,"Kansas Chiefs","LG",71,31,3300000
+695,"Dallas Cowboys","LG",71,23,1372249
+696,"Indianapolis Colts","CB",71,30,2085000
+697,"Detroit Lions","CB",71,24,710834
+698,"Philadelphia Eagles","SS",71,23,1000278
+699,"Jacksonville Jaguars","TE",71,28,1590000
+700,"Jacksonville Jaguars","LT",71,24,13754000
+701,"Green Bay Packers","DT",71,25,1250000
+702,"Green Bay Packers","WR",71,24,850000
+703,"Baltimore Ravens","LG",71,25,644602
+704,"Pittsburgh Steelers","FB",71,27,3250000
+705,"Cincinnati Bengals","WR",71,21,2171697
+706,"Buffalo Bills","TE",71,23,880400
+707,"Denver Broncos","RE",71,26,990000
+708,"Kansas Chiefs","DT",71,24,918295
+709,"Indianapolis Colts","QB",71,27,5000000
+710,"Miami Dolphins","ROLB",71,27,920000
+711,"Miami Dolphins","WR",71,24,920000
+712,"Miami Dolphins","CB",71,23,850000
+713,"Detroit Lions","CB",71,25,1200000
+714,"Atlanta Falcons","LE",71,22,1728094
+715,"Los Angeles Chargers","FS",71,23,1183028
+716,"Buffalo Bills","HB",71,32,1750000
+717,"Miami Dolphins","HB",71,24,920000
+718,"Detroit Lions","RE",71,25,12333333
+719,"Detroit Lions","MLB",71,23,1047500
+720,"Houston Texans","TE",71,28,830879
+721,"Cleveland Browns","K",71,23,695114
+722,"Tampa Bay Buccaneers","RT",71,21,4057007
+723,"Chicago Bears","QB",71,31,8000000
+724,"Dallas Cowboys","DT",71,22,1219549
+725,"Miami Dolphins","RE",71,23,1413878
+726,"Miami Dolphins","MLB",71,26,1990000
+727,"New York Jets","FS",71,23,1229347
+728,"New York Giants","CB",71,24,907500
+729,"Tampa Bay Buccaneers","SS",71,27,990000
+730,"Jacksonville Jaguars","RG",71,28,5018333
+731,"Minnesota Vikings","HB",71,27,990000
+732,"Baltimore Ravens","WR",71,22,1116927
+733,"Baltimore Ravens","WR",71,27,990000
+734,"Houston Texans","C",71,27,1250000
+735,"Cincinnati Bengals","MLB",70,24,1020885
+736,"St. Louis Cardinals","WR",70,23,895000
+737,"Los Angeles Chargers","LOLB",70,24,778610
+738,"Kansas Chiefs","RE",70,26,2250000
+739,"Dallas Cowboys","WR",70,28,275111
+740,"Philadelphia Eagles","LG",70,26,5850000
+741,"Pittsburgh Steelers","CB",70,22,920795
+742,"Tennessee Titans","FS",70,22,814072
+743,"New York Jets","MLB",70,24,706063
+744,"New England Patriots","HB",70,30,1850000
+745,"Los Angeles Rams","WR",70,24,1402785
+746,"Houston Texans","LOLB",70,24,655510
+747,"Buffalo Bills","RT",70,23,1876868
+748,"Buffalo Bills","WR",70,32,1075000
+749,"Denver Broncos","WR",70,21,1784284
+750,"Denver Broncos","MLB",70,25,793496
+751,"Indianapolis Colts","RE",70,24,1486127
+752,"Indianapolis Colts","WR",70,26,1127500
+753,"Dallas Cowboys","DT",70,23,1151506
+754,"Los Angeles Chargers","FS",70,26,8750000
+755,"New England Patriots","CB",70,22,1656664
+756,"Jacksonville Jaguars","CB",70,25,1035000
+757,"St. Louis Cardinals","SS",70,23,717542
+758,"Jacksonville Jaguars","RE",70,25,5000000
+759,"New York Jets","WR",70,22,1358424
+760,"New York Jets","ROLB",70,25,990000
+761,"Detroit Lions","MLB",70,24,5500000
+762,"Buffalo Bills","HB",70,22,1130520
+763,"Pittsburgh Steelers","WR",70,22,1654159
+764,"Chicago Bears","TE",70,21,1894447
+765,"Buffalo Bills","DT",70,27,3250000
+766,"Buffalo Bills","DT",70,26,1500000
+767,"Los Angeles Chargers","DT",70,24,869035
+768,"Dallas Cowboys","WR",70,24,1127500
+769,"Miami Dolphins","C",70,27,3000000
+770,"Miami Dolphins","SS",70,27,2850000
+771,"Carolina Panthers","SS",70,22,1310369
+772,"Washington Commanders","CB",70,25,654473
+773,"New York Giants","FB",70,27,1125000
+774,"New York Jets","ROLB",70,26,2750000
+775,"New York Jets","WR",70,24,644602
+776,"New York Jets","HB",70,23,1035000
+777,"Green Bay Packers","WR",70,28,920000
+778,"Carolina Panthers","TE",70,24,5650000
+779,"New England Patriots","WR",70,23,588333
+780,"Tennessee Titans","RG",70,23,925045
+781,"Denver Broncos","WR",70,26,10000000
+782,"Kansas Chiefs","LOLB",70,25,830785
+783,"Denver Broncos","QB",70,23,1752705
+784,"Miami Dolphins","MLB",70,26,2500000
+785,"Atlanta Falcons","P",70,23,882500
+786,"Indianapolis Colts","CB",70,24,825000
+787,"Kansas Chiefs","CB",70,23,675580
+788,"Jacksonville Jaguars","P",70,25,3000000
+789,"Jacksonville Jaguars","DT",70,23,1202670
+790,"Jacksonville Jaguars","RT",70,22,1960856
+791,"Los Angeles Rams","RE",70,25,4050000
+792,"New Orleans Saints","WR",70,22,588333
+793,"Houston Texans","LG",70,24,1267022
+794,"Minnesota Vikings","RE",70,26,920000
+795,"Denver Broncos","WR",70,25,785660
+796,"Tampa Bay Buccaneers","K",70,26,762500
+797,"Tampa Bay Buccaneers","LT",70,27,15500000
+798,"Kansas Chiefs","LE",70,25,990000
+799,"Los Angeles Chargers","QB",70,22,6644689
+800,"Miami Dolphins","CB",70,20,2813551
+801,"Atlanta Falcons","CB",70,21,3576437
+802,"Chicago Bears","CB",70,25,990000
+803,"Carolina Panthers","DT",70,30,1075000
+804,"Carolina Panthers","TE",70,28,3325000
+805,"Las Vegas Raiders","WR",70,21,1156645
+806,"Las Vegas Raiders","RE",70,24,1045000
+807,"Denver Broncos","LE",69,22,1099762
+808,"Denver Broncos","LT",69,28,17000000
+809,"Kansas Chiefs","WR",69,26,2133000
+810,"Tennessee Titans","CB",69,21,1332549
+811,"Detroit Lions","SS",69,26,1127500
+812,"Indianapolis Colts","FS",69,22,1134960
+813,"New England Patriots","HB",69,23,907784
+814,"Carolina Panthers","LE",69,26,2000000
+815,"Tennessee Titans","HB",69,22,1109430
+816,"Las Vegas Raiders","K",69,25,4600000
+817,"Seattle Seahawks","LE",69,23,1691128
+818,"Denver Broncos","LOLB",69,27,2775000
+819,"Tampa Bay Buccaneers","MLB",69,29,1212500
+820,"St. Louis Cardinals","DT",69,22,1017118
+821,"Los Angeles Chargers","QB",69,31,5500000
+822,"Atlanta Falcons","LE",69,24,752098
+823,"New York Giants","P",69,27,2900000
+824,"San Francisco 49ers","FS",69,24,837843
+825,"Dallas Cowboys","CB",69,22,1580227
+826,"Washington Commanders","FS",69,25,790909
+827,"Tennessee Titans","SS",69,25,686973
+828,"Tampa Bay Buccaneers","HB",69,23,1177110
+829,"Miami Dolphins","HB",69,25,850000
+830,"Los Angeles Rams","ROLB",69,25,683634
+831,"Baltimore Ravens","MLB",69,22,1084234
+832,"Minnesota Vikings","DT",69,29,1585000
+833,"San Francisco 49ers","RE",69,29,3250000
+834,"Chicago Bears","WR",69,25,965000
+835,"Buffalo Bills","WR",69,21,998593
+836,"Denver Broncos","LE",69,23,1039700
+837,"Denver Broncos","RE",69,25,1500000
+838,"St. Louis Cardinals","LE",69,23,1073441
+839,"St. Louis Cardinals","LG",69,24,895000
+840,"Philadelphia Eagles","P",69,28,2666667
+841,"Atlanta Falcons","LE",69,25,1750000
+842,"Jacksonville Jaguars","SS",69,25,1209834
+843,"Cleveland Browns","FS",69,23,850000
+844,"Tampa Bay Buccaneers","CB",69,26,1500000
+845,"Tennessee Titans","FS",69,28,292000
+846,"Buffalo Bills","SS",69,28,990000
+847,"New York Jets","LOLB",69,23,4500000
+848,"New York Jets","K",69,30,850000
+849,"Green Bay Packers","LG",69,30,990000
+850,"Carolina Panthers","LT",69,22,1909731
+851,"Washington Commanders","HB",69,22,1233160
+852,"Las Vegas Raiders","TE",69,23,752098
+853,"Washington Commanders","MLB",69,29,2500000
+854,"Washington Commanders","WR",69,22,895000
+855,"Washington Commanders","MLB",69,28,3500000
+856,"Houston Texans","TE",69,24,965000
+857,"Buffalo Bills","K",69,23,869806
+858,"St. Louis Cardinals","LE",69,26,990000
+859,"Atlanta Falcons","WR",69,25,990000
+860,"Miami Dolphins","SS",69,26,1035000
+861,"Houston Texans","CB",69,24,633598
+862,"Pittsburgh Steelers","CB",69,25,4500000
+863,"New York Jets","CB",69,26,990000
+864,"Jacksonville Jaguars","ROLB",69,24,876509
+865,"Detroit Lions","SS",69,24,930974
+866,"Detroit Lions","RE",69,22,1232835
+867,"New Orleans Saints","LOLB",69,23,1196780
+868,"Miami Dolphins","ROLB",69,25,707991
+869,"Philadelphia Eagles","LT",69,24,3092903
+870,"Indianapolis Colts","FS",69,26,2133000
+871,"New York Jets","HB",69,26,920000
+872,"New England Patriots","TE",69,23,1116568
+873,"Seattle Seahawks","ROLB",69,22,715730
+874,"Seattle Seahawks","RE",69,23,893139
+875,"Houston Texans","WR",69,27,970000
+876,"Tennessee Titans","TE",69,25,3000000
+877,"Chicago Bears","RE",68,31,1212500
+878,"Cincinnati Bengals","ROLB",68,22,1028127
+879,"Cincinnati Bengals","C",68,28,6800000
+880,"Cincinnati Bengals","DT",68,24,850000
+881,"Cleveland Browns","RT",68,29,3500000
+882,"Indianapolis Colts","K",68,23,768333
+883,"Miami Dolphins","ROLB",68,27,585000
+884,"Philadelphia Eagles","LOLB",68,26,1127500
+885,"New York Giants","TE",68,29,1600000
+886,"New England Patriots","FS",68,31,2150000
+887,"Denver Broncos","CB",68,22,1175970
+888,"Las Vegas Raiders","CB",68,22,947350
+889,"Carolina Panthers","LE",68,26,728089
+890,"Carolina Panthers","WR",68,25,233866
+891,"Detroit Lions","HB",68,22,673139
+892,"Los Angeles Rams","K",68,22,825000
+893,"Seattle Seahawks","ROLB",68,24,742500
+894,"Minnesota Vikings","WR",68,23,648644
+895,"Buffalo Bills","TE",68,26,762500
+896,"Denver Broncos","DT",68,29,2875000
+897,"Denver Broncos","ROLB",68,24,590000
+898,"Cleveland Browns","DT",68,22,1123438
+899,"Cleveland Browns","RG",68,25,14200000
+900,"Dallas Cowboys","LT",68,28,5000000
+901,"Miami Dolphins","WR",68,26,1127500
+902,"Las Vegas Raiders","QB",68,26,3500000
+903,"Philadelphia Eagles","WR",68,24,887500
+904,"Philadelphia Eagles","DT",68,25,990000
+905,"New York Jets","RG",68,30,3500000
+906,"Dallas Cowboys","FS",68,26,293000
+907,"Baltimore Ravens","SS",68,27,252000
+908,"New England Patriots","LOLB",68,28,1035000
+909,"Los Angeles Rams","DT",68,24,786653
+910,"New Orleans Saints","TE",68,23,1077803
+911,"Pittsburgh Steelers","WR",68,24,825000
+912,"Tennessee Titans","WR",68,26,1127500
+913,"Cincinnati Bengals","P",68,35,1637500
+914,"Los Angeles Chargers","LG",68,26,252000
+915,"Atlanta Falcons","LE",68,29,1127500
+916,"New York Giants","WR",68,26,1035000
+917,"New York Giants","MLB",68,27,1272500
+918,"Cincinnati Bengals","CB",68,25,252000
+919,"Green Bay Packers","TE",68,23,965000
+920,"Chicago Bears","TE",68,25,2425000
+921,"Cleveland Browns","LT",68,28,3400000
+922,"Cleveland Browns","LOLB",68,24,933969
+923,"Tampa Bay Buccaneers","WR",68,22,902355
+924,"Philadelphia Eagles","QB",68,22,1506294
+925,"Baltimore Ravens","SS",68,21,780000
+926,"Las Vegas Raiders","CB",68,24,895000
+927,"New Orleans Saints","HB",68,26,1127500
+928,"Houston Texans","RE",68,27,2750000
+929,"Cincinnati Bengals","FB",68,24,2600000
+930,"Denver Broncos","TE",68,27,2666667
+931,"Denver Broncos","LG",68,25,1127500
+932,"Los Angeles Chargers","ROLB",68,23,965000
+933,"Kansas Chiefs","MLB",68,25,1570000
+934,"New York Jets","RT",68,28,9200000
+935,"New York Jets","LOLB",68,27,1185000
+936,"Miami Dolphins","FS",68,22,1218276
+937,"New York Jets","LOLB",68,23,837500
+938,"Jacksonville Jaguars","CB",68,21,984734
+939,"New England Patriots","LE",68,26,1050000
+940,"Kansas Chiefs","HB",68,25,1600000
+941,"Baltimore Ravens","LE",68,26,2500000
+942,"Washington Commanders","RE",68,27,990000
+943,"Cincinnati Bengals","ROLB",67,25,1127500
+944,"Cincinnati Bengals","TE",67,24,1376574
+945,"Indianapolis Colts","DT",67,26,990000
+946,"Indianapolis Colts","RE",67,25,2920000
+947,"Atlanta Falcons","LG",67,31,1075000
+948,"Atlanta Falcons","K",67,26,920000
+949,"Atlanta Falcons","RT",67,25,2566436
+950,"Jacksonville Jaguars","TE",67,23,1062711
+951,"San Francisco 49ers","SS",67,26,1200000
+952,"Philadelphia Eagles","SS",67,25,2100000
+953,"Miami Dolphins","FS",67,24,850000
+954,"Carolina Panthers","RG",67,27,1127500
+955,"Las Vegas Raiders","MLB",67,25,4500000
+956,"Atlanta Falcons","HB",67,24,252000
+957,"Los Angeles Rams","HB",67,23,965000
+958,"Houston Texans","WR",67,25,895000
+959,"Minnesota Vikings","DT",67,24,672274
+960,"Tampa Bay Buccaneers","LOLB",67,23,823760
+961,"Indianapolis Colts","ROLB",67,24,640396
+962,"Miami Dolphins","QB",67,23,850000
+963,"Atlanta Falcons","C",67,22,1171594
+964,"New York Giants","RE",67,26,3000000
+965,"Jacksonville Jaguars","WR",67,26,920000
+966,"Detroit Lions","RT",67,27,9000000
+967,"Green Bay Packers","TE",67,23,1104921
+968,"Miami Dolphins","FS",67,26,252000
+969,"Baltimore Ravens","FS",67,23,654450
+970,"Cincinnati Bengals","CB",67,25,990000
+971,"Los Angeles Rams","LOLB",67,22,1138893
+972,"New Orleans Saints","FB",67,28,990000
+973,"Pittsburgh Steelers","DT",67,26,4500000
+974,"San Francisco 49ers","RG",67,31,1075000
+975,"Cleveland Browns","LE",67,23,850000
+976,"Cleveland Browns","MLB",67,21,1086078
+977,"Tampa Bay Buccaneers","WR",67,25,1035000
+978,"Dallas Cowboys","TE",67,24,10931000
+979,"Cleveland Browns","QB",67,32,6000000
+980,"Philadelphia Eagles","ROLB",67,22,1078323
+981,"Atlanta Falcons","ROLB",67,29,252000
+982,"New York Jets","LE",67,23,13750000
+983,"New York Jets","C",67,29,306000
+984,"New York Giants","SS",67,31,1212500
+985,"New York Giants","CB",67,22,1021722
+986,"Baltimore Ravens","CB",67,25,780250
+987,"Las Vegas Raiders","ROLB",67,23,780000
+988,"Las Vegas Raiders","LOLB",67,31,990000
+989,"Tennessee Titans","TE",67,28,990000
+990,"Minnesota Vikings","RG",67,23,895000
+991,"Cincinnati Bengals","MLB",67,26,252000
+992,"Cincinnati Bengals","LG",67,25,2928123
+993,"St. Louis Cardinals","WR",67,24,920000
+994,"Los Angeles Chargers","WR",67,22,875000
+995,"Los Angeles Chargers","LE",67,25,2500000
+996,"Jacksonville Jaguars","WR",67,22,900538
+997,"Buffalo Bills","FS",67,24,676085
+998,"Carolina Panthers","CB",67,25,1035000
+999,"New York Giants","CB",67,24,975000
+1000,"Cincinnati Bengals","CB",67,26,990000
+1001,"New York Jets","CB",67,22,902700
+1002,"Kansas Chiefs","FS",67,23,982330
+1003,"New England Patriots","LOLB",67,23,1125982
+1004,"Buffalo Bills","HB",67,29,742500
+1005,"Tampa Bay Buccaneers","HB",67,26,850000
+1006,"Minnesota Vikings","HB",67,25,1925000
+1007,"New Orleans Saints","DT",67,24,586667
+1008,"Pittsburgh Steelers","ROLB",67,23,1076703
+1009,"Tennessee Titans","K",67,26,780000
+1010,"Minnesota Vikings","WR",67,26,920000
+1011,"Minnesota Vikings","DT",67,26,990000
+1012,"Chicago Bears","TE",67,26,990000
+1013,"Cincinnati Bengals","LG",67,29,252000
+1014,"Cleveland Browns","TE",67,22,1016008
+1015,"Cleveland Browns","LOLB",67,24,1065000
+1016,"Los Angeles Chargers","LG",67,26,3500000
+1017,"Miami Dolphins","RG",67,24,2016436
+1018,"Detroit Lions","LE",67,23,813158
+1019,"Detroit Lions","WR",67,22,899823
+1020,"Green Bay Packers","WR",67,23,850000
+1021,"Los Angeles Chargers","HB",67,22,1018836
+1022,"New England Patriots","HB",67,22,761667
+1023,"Seattle Seahawks","RE",67,24,2709020
+1024,"Minnesota Vikings","RE",67,27,252000
+1025,"Los Angeles Chargers","DT",66,31,252000
+1026,"Kansas Chiefs","LG",66,26,920000
+1027,"Jacksonville Jaguars","LE",66,30,1047500
+1028,"New York Jets","RT",66,23,896750
+1029,"Detroit Lions","WR",66,24,895000
+1030,"Carolina Panthers","LE",66,28,1500000
+1031,"New England Patriots","CB",66,30,2000000
+1032,"New England Patriots","TE",66,27,293000
+1033,"Chicago Bears","CB",66,24,965000
+1034,"Minnesota Vikings","CB",66,21,1121289
+1035,"Los Angeles Chargers","SS",66,22,870719
+1036,"Kansas Chiefs","HB",66,23,895000
+1037,"New York Jets","HB",66,22,1010086
+1038,"Houston Texans","FB",66,25,850000
+1039,"San Francisco 49ers","LOLB",66,30,252000
+1040,"Chicago Bears","WR",66,22,894262
+1041,"Tampa Bay Buccaneers","RE",66,26,895000
+1042,"Philadelphia Eagles","LE",66,25,1035000
+1043,"New York Jets","RE",66,29,165600
+1044,"Detroit Lions","RT",66,24,686921
+1045,"Carolina Panthers","WR",66,25,304000
+1046,"Carolina Panthers","ROLB",66,23,850000
+1047,"Carolina Panthers","CB",66,25,1055000
+1048,"Philadelphia Eagles","CB",66,24,1400000
+1049,"Seattle Seahawks","RG",66,23,1225537
+1050,"Denver Broncos","WR",66,23,837500
+1051,"Cleveland Browns","WR",66,25,1000000
+1052,"Tampa Bay Buccaneers","RG",66,25,842176
+1053,"St. Louis Cardinals","TE",66,25,3000000
+1054,"St. Louis Cardinals","MLB",66,25,1650000
+1055,"St. Louis Cardinals","P",66,26,825000
+1056,"Indianapolis Colts","K",66,24,762500
+1057,"San Francisco 49ers","QB",66,25,920000
+1058,"New York Jets","LOLB",66,23,586667
+1059,"New England Patriots","TE",66,21,1078703
+1060,"Miami Dolphins","HB",66,23,651777
+1061,"Seattle Seahawks","C",66,28,990000
+1062,"Tennessee Titans","WR",66,24,762500
+1063,"Minnesota Vikings","LT",66,22,1384304
+1064,"Minnesota Vikings","C",66,29,990000
+1065,"Denver Broncos","TE",66,25,850000
+1066,"Denver Broncos","TE",66,22,1011011
+1067,"Cleveland Browns","WR",66,21,870402
+1068,"Cleveland Browns","DT",66,27,851250
+1069,"Tampa Bay Buccaneers","WR",66,26,990000
+1070,"St. Louis Cardinals","RE",66,26,990000
+1071,"Indianapolis Colts","ROLB",66,24,636764
+1072,"Atlanta Falcons","LOLB",66,23,1010271
+1073,"New York Giants","MLB",66,24,714044
+1074,"Detroit Lions","ROLB",66,24,990000
+1075,"Denver Broncos","CB",66,25,920000
+1076,"Jacksonville Jaguars","HB",66,23,907500
+1077,"Washington Commanders","ROLB",66,22,901901
+1078,"Detroit Lions","HB",66,22,860000
+1079,"Seattle Seahawks","LG",66,24,850000
+1080,"Pittsburgh Steelers","LT",66,23,851841
+1081,"Houston Texans","WR",66,21,825000
+1082,"Cincinnati Bengals","RT",66,26,990000
+1083,"Cincinnati Bengals","LE",66,22,912369
+1084,"St. Louis Cardinals","LOLB",66,25,920000
+1085,"Indianapolis Colts","TE",66,26,3384000
+1086,"New York Jets","WR",66,24,965000
+1087,"Detroit Lions","FB",66,24,780000
+1088,"Carolina Panthers","LG",66,24,661960
+1089,"Carolina Panthers","RE",66,28,1075000
+1090,"Houston Texans","CB",66,24,780000
+1091,"Cincinnati Bengals","HB",66,24,1650000
+1092,"New Orleans Saints","RT",66,28,3000000
+1093,"Houston Texans","LOLB",66,23,1118889
+1094,"Denver Broncos","WR",65,28,850000
+1095,"St. Louis Cardinals","LE",65,24,850000
+1096,"Los Angeles Chargers","C",65,25,686063
+1097,"Kansas Chiefs","P",65,23,764167
+1098,"Philadelphia Eagles","WR",65,22,866165
+1099,"New York Giants","RT",65,27,1415000
+1100,"New York Giants","C",65,27,252000
+1101,"New York Jets","MLB",65,27,1700000
+1102,"Green Bay Packers","RE",65,23,708317
+1103,"Chicago Bears","SS",65,27,1500000
+1104,"Los Angeles Rams","C",65,24,786734
+1105,"Atlanta Falcons","CB",65,23,965000
+1106,"Miami Dolphins","SS",65,25,850000
+1107,"Los Angeles Rams","MLB",65,25,850000
+1108,"Los Angeles Rams","LG",65,25,863011
+1109,"Los Angeles Rams","MLB",65,25,589000
+1110,"Washington Commanders","TE",65,28,1120000
+1111,"Washington Commanders","WR",65,24,2133000
+1112,"Washington Commanders","TE",65,26,990000
+1113,"Cincinnati Bengals","HB",65,22,907500
+1114,"Cleveland Browns","HB",65,25,920000
+1115,"Houston Texans","TE",65,23,780000
+1116,"Tampa Bay Buccaneers","LT",65,29,1127500
+1117,"St. Louis Cardinals","RT",65,27,2750000
+1118,"Los Angeles Chargers","P",65,27,850000
+1119,"Indianapolis Colts","DT",65,26,10250000
+1120,"Atlanta Falcons","LT",65,28,2000000
+1121,"New York Giants","TE",65,23,680002
+1122,"New York Jets","TE",65,24,806643
+1123,"Detroit Lions","MLB",65,25,2337500
+1124,"Green Bay Packers","RE",65,25,990000
+1125,"New England Patriots","FB",65,25,850000
+1126,"Minnesota Vikings","FS",65,22,823750
+1127,"Atlanta Falcons","FS",65,28,252000
+1128,"Green Bay Packers","HB",65,23,850000
+1129,"Seattle Seahawks","FB",65,31,2225000
+1130,"Tennessee Titans","LE",65,24,965000
+1131,"Minnesota Vikings","MLB",65,23,993393
+1132,"San Francisco 49ers","TE",65,25,1600000
+1133,"San Francisco 49ers","MLB",65,27,1035000
+1134,"Chicago Bears","ROLB",65,27,1022500
+1135,"Denver Broncos","ROLB",65,24,706724
+1136,"Miami Dolphins","RG",65,23,953562
+1137,"Miami Dolphins","LE",65,24,2858333
+1138,"Washington Commanders","QB",65,24,850000
+1139,"Atlanta Falcons","WR",65,23,586667
+1140,"Jacksonville Jaguars","LOLB",65,23,895000
+1141,"Detroit Lions","P",65,24,780000
+1142,"Los Angeles Chargers","CB",65,25,920000
+1143,"Los Angeles Rams","CB",65,27,4766000
+1144,"Tennessee Titans","CB",65,27,293000
+1145,"Los Angeles Rams","TE",65,23,987033
+1146,"Baltimore Ravens","WR",65,23,865775
+1147,"Washington Commanders","LG",65,26,4500000
+1148,"St. Louis Cardinals","HB",65,21,849429
+1149,"New Orleans Saints","DT",65,25,920000
+1150,"Seattle Seahawks","TE",65,21,991360
+1151,"Seattle Seahawks","WR",65,26,780000
+1152,"Tennessee Titans","ROLB",65,24,585000
+1153,"Minnesota Vikings","WR",65,23,890693
+1154,"Cincinnati Bengals","RE",65,24,895000
+1155,"Buffalo Bills","MLB",65,27,2500000
+1156,"Indianapolis Colts","WR",65,23,850000
+1157,"Green Bay Packers","MLB",65,25,863689
+1158,"St. Louis Cardinals","SS",65,30,1075000
+1159,"Las Vegas Raiders","LG",65,23,1022946
+1160,"Minnesota Vikings","CB",65,23,825000
+1161,"Washington Commanders","SS",65,28,2000000
+1162,"Baltimore Ravens","LG",65,23,804383
+1163,"Carolina Panthers","MLB",62,23,1200000
+1164,"Seattle Seahawks","HB",65,22,665840
+1165,"Seattle Seahawks","DT",65,25,780000
+1166,"Houston Texans","LE",65,26,1750000
+1167,"Minnesota Vikings","LE",65,24,920000
+1168,"San Francisco 49ers","LT",65,23,674887
+1169,"Chicago Bears","LOLB",65,23,905168
+1170,"Chicago Bears","MLB",65,24,784644
+1171,"Dallas Cowboys","LE",65,22,905000
+1172,"Miami Dolphins","RT",65,28,5016667
+1173,"Jacksonville Jaguars","LOLB",65,24,850000
+1174,"Dallas Cowboys","SS",65,25,661960
+1175,"Las Vegas Raiders","TE",65,30,1075000
+1176,"Jacksonville Jaguars","SS",65,22,903029
+1177,"Buffalo Bills","SS",65,26,3000000
+1178,"San Francisco 49ers","CB",65,28,1075000
+1179,"Buffalo Bills","CB",65,23,855000
+1180,"Los Angeles Rams","WR",65,22,837500
+1181,"Washington Commanders","RG",65,24,907500
+1182,"Washington Commanders","DT",65,23,682011
+1183,"Seattle Seahawks","RE",65,22,911586
+1184,"Houston Texans","LG",65,30,1075000
+1185,"Minnesota Vikings","RE",65,22,1011445
+1186,"Tampa Bay Buccaneers","LE",64,27,2500000
+1187,"Los Angeles Chargers","TE",64,27,920000
+1188,"Miami Dolphins","LOLB",64,22,705000
+1189,"Atlanta Falcons","RE",64,25,895000
+1190,"Detroit Lions","ROLB",64,27,1127500
+1191,"Los Angeles Rams","LT",64,23,696130
+1192,"Atlanta Falcons","SS",64,23,990478
+1193,"Minnesota Vikings","CB",64,21,898446
+1194,"Baltimore Ravens","RG",64,23,1031823
+1195,"Dallas Cowboys","CB",64,30,1750000
+1196,"Carolina Panthers","SS",64,27,4000000
+1197,"Pittsburgh Steelers","RE",64,24,165600
+1198,"Atlanta Falcons","HB",64,23,850000
+1199,"Buffalo Bills","RE",64,26,895000
+1200,"Denver Broncos","DT",64,27,990000
+1201,"Los Angeles Chargers","FB",64,22,761667
+1202,"Indianapolis Colts","LE",64,24,705000
+1203,"Miami Dolphins","TE",64,25,773058
+1204,"New York Giants","LOLB",64,23,851286
+1205,"Detroit Lions","MLB",64,24,2050000
+1206,"New England Patriots","TE",64,24,872500
+1207,"Los Angeles Rams","LOLB",64,25,895000
+1208,"Jacksonville Jaguars","FS",64,26,252000
+1209,"Chicago Bears","CB",64,24,881306
+1210,"Miami Dolphins","CB",64,23,165600
+1211,"Washington Commanders","TE",64,29,8021667
+1212,"New Orleans Saints","WR",64,27,252000
+1213,"Seattle Seahawks","HB",64,21,947350
+1214,"Pittsburgh Steelers","HB",64,25,1035000
+1215,"Tennessee Titans","WR",64,26,895000
+1216,"Minnesota Vikings","LT",64,27,952500
+1217,"Cincinnati Bengals","DT",64,26,2133000
+1218,"St. Louis Cardinals","TE",64,26,780000
+1219,"Los Angeles Chargers","LOLB",64,23,965000
+1220,"Buffalo Bills","QB",64,29,252000
+1221,"New York Jets","TE",64,28,252000
+1222,"New York Jets","LG",64,22,996498
+1223,"Detroit Lions","MLB",64,26,1127500
+1224,"Green Bay Packers","RG",64,28,7000000
+1225,"New York Giants","FS",64,24,920000
+1226,"Los Angeles Rams","MLB",64,24,774975
+1227,"Miami Dolphins","CB",64,24,165600
+1228,"Los Angeles Chargers","CB",64,27,907500
+1229,"Washington Commanders","LE",64,25,1022500
+1230,"Minnesota Vikings","TE",64,25,685258
+1231,"San Francisco 49ers","DT",64,24,767550
+1232,"Buffalo Bills","WR",64,21,787500
+1233,"Buffalo Bills","RE",64,26,887500
+1234,"Buffalo Bills","TE",64,25,654138
+1235,"Denver Broncos","MLB",64,24,883194
+1236,"Cleveland Browns","C",64,21,902412
+1237,"St. Louis Cardinals","RE",64,21,994771
+1238,"Los Angeles Chargers","WR",64,22,165600
+1239,"Kansas Chiefs","WR",64,27,895000
+1240,"Indianapolis Colts","WR",64,22,856103
+1241,"Miami Dolphins","LT",64,21,3410088
+1242,"New Orleans Saints","QB",64,30,10000000
+1243,"New York Jets","WR",64,23,780000
+1244,"Carolina Panthers","C",64,29,1040000
+1245,"Los Angeles Rams","LG",64,24,1879599
+1246,"Chicago Bears","CB",64,22,901418
+1247,"St. Louis Cardinals","CB",64,26,256222
+1248,"New Orleans Saints","WR",64,22,850000
+1249,"Tennessee Titans","RT",64,30,1325000
+1250,"Cleveland Browns","LG",64,23,672334
+1251,"Cleveland Browns","RG",64,25,577500
+1252,"Kansas Chiefs","RT",64,22,1094604
+1253,"Atlanta Falcons","WR",64,24,920000
+1254,"St. Louis Cardinals","QB",64,27,252000
+1255,"Jacksonville Jaguars","MLB",64,22,947350
+1256,"Detroit Lions","TE",64,22,768333
+1257,"Carolina Panthers","DT",64,23,872243
+1258,"Las Vegas Raiders","LT",64,24,1023834
+1259,"Carolina Panthers","SS",64,24,965000
+1260,"Baltimore Ravens","LG",64,22,947350
+1261,"Kansas Chiefs","FS",64,24,780308
+1262,"Seattle Seahawks","RT",64,28,4500000
+1263,"Carolina Panthers","HB",64,24,165600
+1264,"Minnesota Vikings","DT",64,21,996498
+1265,"Minnesota Vikings","LE",64,23,742500
+1266,"San Francisco 49ers","WR",63,23,660000
+1267,"Cincinnati Bengals","WR",63,26,1015000
+1268,"Cleveland Browns","TE",63,26,1600000
+1269,"Tampa Bay Buccaneers","LE",63,24,895000
+1270,"Dallas Cowboys","C",63,22,947350
+1271,"Philadelphia Eagles","LOLB",63,23,866605
+1272,"Philadelphia Eagles","DT",63,24,850000
+1273,"Atlanta Falcons","WR",63,24,850000
+1274,"New York Giants","TE",63,28,990000
+1275,"New York Jets","CB",63,27,990000
+1276,"Indianapolis Colts","CB",63,22,860031
+1277,"Kansas Chiefs","CB",63,23,787500
+1278,"Miami Dolphins","CB",63,23,825000
+1279,"Pittsburgh Steelers","ROLB",63,22,1000000
+1280,"San Francisco 49ers","ROLB",63,23,590000
+1281,"San Francisco 49ers","RE",63,26,825000
+1282,"Chicago Bears","LOLB",63,27,907500
+1283,"Los Angeles Chargers","DT",63,24,895000
+1284,"Philadelphia Eagles","RG",63,23,947350
+1285,"Philadelphia Eagles","LE",63,25,837500
+1286,"Jacksonville Jaguars","LT",63,22,1014653
+1287,"Green Bay Packers","MLB",63,24,654476
+1288,"Carolina Panthers","WR",63,27,920000
+1289,"Los Angeles Rams","WR",63,24,965000
+1290,"Baltimore Ravens","C",63,23,5150000
+1291,"Washington Commanders","SS",63,21,852082
+1292,"Denver Broncos","CB",63,27,252000
+1293,"Dallas Cowboys","CB",63,23,660000
+1294,"San Francisco 49ers","CB",63,25,789000
+1295,"Seattle Seahawks","WR",63,22,856103
+1296,"Carolina Panthers","HB",63,24,895000
+1297,"San Francisco 49ers","DT",63,23,535000
+1298,"Chicago Bears","TE",63,27,850000
+1299,"Philadelphia Eagles","MLB",63,24,2150000
+1300,"Philadelphia Eagles","RE",63,24,846758
+1301,"Pittsburgh Steelers","QB",63,25,4985199
+1302,"Detroit Lions","QB",63,33,1075000
+1303,"Detroit Lions","RG",63,23,1187202
+1304,"Pittsburgh Steelers","FS",63,24,850000
+1305,"Jacksonville Jaguars","SS",63,23,586667
+1306,"Denver Broncos","SS",63,24,920000
+1307,"Los Angeles Rams","SS",63,22,866427
+1308,"Seattle Seahawks","CB",63,24,920000
+1309,"New Orleans Saints","LE",63,23,590000
+1310,"Las Vegas Raiders","CB",63,24,705000
+1311,"Philadelphia Eagles","HB",63,22,705000
+1312,"Tennessee Titans","RE",63,23,893186
+1313,"Minnesota Vikings","RT",63,28,2377500
+1314,"Cincinnati Bengals","MLB",63,23,852174
+1315,"Los Angeles Chargers","WR",63,25,895000
+1316,"Indianapolis Colts","LOLB",63,25,702349
+1317,"Miami Dolphins","LT",63,25,1127500
+1318,"Indianapolis Colts","QB",63,22,1006816
+1319,"Carolina Panthers","DT",63,27,165600
+1320,"Las Vegas Raiders","RG",63,29,4180000
+1321,"Philadelphia Eagles","FS",63,24,672189
+1322,"Las Vegas Raiders","SS",63,26,850000
+1323,"St. Louis Cardinals","FS",63,27,1127500
+1324,"Pittsburgh Steelers","LG",63,23,988453
+1325,"Pittsburgh Steelers","LOLB",63,25,952500
+1326,"San Francisco 49ers","TE",63,22,869008
+1327,"St. Louis Cardinals","C",63,24,805379
+1328,"Los Angeles Chargers","WR",63,23,585000
+1329,"Indianapolis Colts","DT",63,23,660000
+1330,"Dallas Cowboys","DT",63,27,920000
+1331,"Dallas Cowboys","RE",63,23,965000
+1332,"Philadelphia Eagles","LT",63,22,742500
+1333,"Carolina Panthers","QB",63,25,963249
+1334,"Detroit Lions","RG",63,29,1600000
+1335,"New England Patriots","DT",63,23,705149
+1336,"Washington Commanders","LE",63,24,825000
+1337,"Cincinnati Bengals","SS",63,25,895000
+1338,"Washington Commanders","RE",63,23,848175
+1339,"Chicago Bears","CB",63,23,661960
+1340,"Minnesota Vikings","WR",63,23,895000
+1341,"Kansas Chiefs","LE",62,24,1035000
+1342,"Philadelphia Eagles","MLB",62,26,850000
+1343,"Detroit Lions","LG",62,23,1009161
+1344,"Carolina Panthers","WR",62,23,705000
+1345,"Seattle Seahawks","LT",62,24,676251
+1346,"Pittsburgh Steelers","MLB",62,23,661960
+1347,"San Francisco 49ers","RT",62,26,850000
+1348,"Chicago Bears","TE",62,23,780000
+1349,"Tampa Bay Buccaneers","RT",62,27,2300000
+1350,"Indianapolis Colts","ROLB",62,24,856103
+1351,"Indianapolis Colts","MLB",62,25,577500
+1352,"Atlanta Falcons","LE",62,23,705000
+1353,"Atlanta Falcons","FB",62,28,1453333
+1354,"Jacksonville Jaguars","QB",62,25,1040000
+1355,"Los Angeles Chargers","QB",62,23,699655
+1356,"Jacksonville Jaguars","LG",62,29,2400000
+1357,"New England Patriots","QB",62,34,1075000
+1358,"Detroit Lions","DT",62,24,907500
+1359,"Baltimore Ravens","MLB",62,25,1683000
+1360,"Washington Commanders","LT",62,21,1023592
+1361,"New Orleans Saints","SS",62,24,2000000
+1362,"Houston Texans","CB",62,24,990000
+1363,"Tampa Bay Buccaneers","CB",62,22,825000
+1364,"Philadelphia Eagles","CB",62,24,965000
+1365,"Tennessee Titans","RG",62,28,920000
+1366,"Tampa Bay Buccaneers","RE",62,26,920000
+1367,"Miami Dolphins","LOLB",62,24,965000
+1368,"Buffalo Bills","QB",62,22,780000
+1369,"New England Patriots","RG",62,22,874367
+1370,"Washington Commanders","TE",62,22,705000
+1371,"New Orleans Saints","TE",62,26,850000
+1372,"Kansas Chiefs","CB",62,27,990000
+1373,"Minnesota Vikings","CB",62,23,657419
+1374,"Washington Commanders","CB",62,24,660000
+1375,"Tampa Bay Buccaneers","HB",62,22,761667
+1376,"Cleveland Browns","DT",62,26,1110000
+1377,"St. Louis Cardinals","TE",62,25,1127500
+1378,"Dallas Cowboys","TE",62,29,1127500
+1379,"Detroit Lions","LE",62,26,895000
+1380,"Detroit Lions","DT",62,23,866544
+1381,"New England Patriots","LOLB",62,25,920000
+1382,"Washington Commanders","C",62,25,895000
+1383,"Tennessee Titans","CB",62,27,252000
+1384,"Jacksonville Jaguars","HB",62,23,990000
+1385,"Cleveland Browns","DT",62,26,1035000
+1386,"Atlanta Falcons","LOLB",62,28,252000
+1387,"Tampa Bay Buccaneers","QB",62,30,2000000
+1388,"Detroit Lions","WR",62,25,4750000
+1389,"Green Bay Packers","MLB",62,22,837500
+1390,"Baltimore Ravens","MLB",62,24,588333
+1391,"Detroit Lions","FS",62,24,587333
+1392,"Green Bay Packers","FS",62,26,1035000
+1393,"Los Angeles Chargers","TE",61,23,695000
+1394,"New York Giants","LG",61,23,910535
+1395,"New York Giants","LE",61,24,705000
+1396,"New England Patriots","QB",61,24,789028
+1397,"Green Bay Packers","ROLB",61,21,843571
+1398,"Atlanta Falcons","SS",61,26,895000
+1399,"Los Angeles Rams","FS",61,24,837500
+1400,"Baltimore Ravens","SS",61,23,660000
+1401,"Cincinnati Bengals","FS",61,26,2062500
+1402,"Denver Broncos","LE",61,24,895000
+1403,"Tampa Bay Buccaneers","LE",61,24,825000
+1404,"Tampa Bay Buccaneers","TE",61,25,1035000
+1405,"Atlanta Falcons","TE",61,24,850000
+1406,"Denver Broncos","QB",61,27,990000
+1407,"Green Bay Packers","MLB",61,24,837500
+1408,"Minnesota Vikings","RT",61,23,671900
+1409,"San Francisco 49ers","RG",61,24,780000
+1410,"Dallas Cowboys","LE",61,24,675000
+1411,"Houston Texans","QB",61,29,1212500
+1412,"Washington Commanders","MLB",61,27,990000
+1413,"Pittsburgh Steelers","LE",61,24,847126
+1414,"Green Bay Packers","FS",61,22,844672
+1415,"Tennessee Titans","MLB",61,29,1115000
+1416,"Denver Broncos","TE",61,24,590000
+1417,"Cleveland Browns","TE",61,23,850000
+1418,"Indianapolis Colts","RG",61,24,910924
+1419,"New York Giants","MLB",61,23,842623
+1420,"New York Giants","QB",61,33,1212500
+1421,"Green Bay Packers","LOLB",61,23,742500
+1422,"Los Angeles Rams","FS",61,25,649332
+1423,"Las Vegas Raiders","CB",61,23,590000
+1424,"Tennessee Titans","CB",61,22,843320
+1425,"Chicago Bears","RE",61,24,165600
+1426,"Cincinnati Bengals","LG",61,22,907500
+1427,"Tampa Bay Buccaneers","TE",61,27,990000
+1428,"Los Angeles Chargers","RE",61,23,837500
+1429,"Kansas Chiefs","TE",61,25,1035000
+1430,"Jacksonville Jaguars","TE",61,23,837500
+1431,"New England Patriots","LG",61,24,895000
+1432,"Los Angeles Rams","LE",61,23,742500
+1433,"Washington Commanders","C",61,22,780000
+1434,"Houston Texans","RT",61,24,965000
+1435,"Los Angeles Chargers","RE",60,23,780000
+1436,"New England Patriots","LT",60,24,870545
+1437,"Seattle Seahawks","ROLB",60,23,780000
+1438,"Seattle Seahawks","WR",60,23,742500
+1439,"Atlanta Falcons","FS",60,26,705000
+1440,"Kansas Chiefs","SS",60,23,787500
+1441,"Tampa Bay Buccaneers","CB",60,24,165600
+1442,"Jacksonville Jaguars","CB",60,23,849347
+1443,"Cleveland Browns","CB",60,24,2000000
+1444,"Minnesota Vikings","LG",60,29,1075000
+1445,"Cincinnati Bengals","RT",60,23,667580
+1446,"Denver Broncos","MLB",60,25,895000
+1447,"Tampa Bay Buccaneers","MLB",60,23,895000
+1448,"Atlanta Falcons","DT",60,24,907500
+1449,"New York Giants","MLB",60,22,873341
+1450,"New England Patriots","ROLB",60,27,1750000
+1451,"New Orleans Saints","RG",60,24,742500
+1452,"Pittsburgh Steelers","MLB",60,24,850000
+1453,"New York Giants","CB",60,23,882500
+1454,"Los Angeles Chargers","RT",60,25,2510000
+1455,"Dallas Cowboys","MLB",60,25,586667
+1456,"Miami Dolphins","RG",60,26,1035000
+1457,"Miami Dolphins","LG",60,23,1019893
+1458,"Philadelphia Eagles","DT",60,25,965000
+1459,"New York Jets","LG",60,29,1127500
+1460,"New York Jets","QB",60,23,825000
+1461,"Houston Texans","LT",60,23,1001426
+1462,"Chicago Bears","FS",60,27,1127500
+1463,"Tennessee Titans","FS",60,25,920000
+1464,"St. Louis Cardinals","CB",60,24,1035000
+1465,"Cincinnati Bengals","TE",60,24,825000
+1466,"Denver Broncos","DT",60,27,990000
+1467,"New England Patriots","WR",60,23,585833
+1468,"Washington Commanders","TE",60,24,165600
+1469,"Cincinnati Bengals","RG",60,22,876722
+1470,"Cincinnati Bengals","TE",60,26,252000
+1471,"Denver Broncos","WR",60,22,837500
+1472,"Detroit Lions","DT",60,23,844883
+1473,"Los Angeles Rams","TE",60,25,920000
+1474,"Baltimore Ravens","LOLB",60,23,660000
+1475,"Houston Texans","C",60,28,990000
+1476,"Atlanta Falcons","HB",60,24,907500
+1477,"Minnesota Vikings","LG",60,22,705000
+1478,"Chicago Bears","RT",59,26,990000
+1479,"Cincinnati Bengals","DT",59,24,165600
+1480,"New York Jets","LOLB",59,23,695000
+1481,"Carolina Panthers","C",59,28,1127500
+1482,"Baltimore Ravens","RT",59,26,920000
+1483,"New Orleans Saints","C",59,23,252000
+1484,"Indianapolis Colts","CB",59,27,965000
+1485,"San Francisco 49ers","LT",59,28,1035000
+1486,"Chicago Bears","RT",59,25,1140000
+1487,"Kansas Chiefs","QB",59,35,1625000
+1488,"Seattle Seahawks","DT",59,24,850000
+1489,"Pittsburgh Steelers","RT",59,26,4750000
+1490,"Tennessee Titans","CB",59,23,952500
+1491,"Pittsburgh Steelers","CB",59,25,1035000
+1492,"St. Louis Cardinals","CB",59,25,895000
+1493,"Denver Broncos","LOLB",59,24,837500
+1494,"Tampa Bay Buccaneers","MLB",59,23,695000
+1495,"Dallas Cowboys","LG",59,27,165600
+1496,"Green Bay Packers","C",59,23,660000
+1497,"Kansas Chiefs","CB",59,24,727500
+1498,"St. Louis Cardinals","RG",59,28,1127500
+1499,"Philadelphia Eagles","LG",59,25,648196
+1500,"Jacksonville Jaguars","QB",59,24,895000
+1501,"Green Bay Packers","RG",59,27,1500000
+1502,"Los Angeles Rams","LOLB",59,23,850000
+1503,"New Orleans Saints","MLB",59,25,649151
+1504,"Houston Texans","MLB",59,25,252000
+1505,"Chicago Bears","HB",59,24,850000
+1506,"Minnesota Vikings","TE",59,23,882500
+1507,"Cleveland Browns","MLB",59,24,825000
+1508,"Los Angeles Chargers","MLB",59,23,895000
+1509,"Kansas Chiefs","C",59,24,665363
+1510,"New York Jets","MLB",59,25,990000
+1511,"Houston Texans","MLB",59,28,990000
+1512,"Tennessee Titans","DT",59,24,965000
+1513,"Cleveland Browns","CB",59,23,965000
+1514,"Chicago Bears","C",58,26,977500
+1515,"Chicago Bears","RG",58,23,695000
+1516,"Cleveland Browns","ROLB",58,25,850000
+1517,"Philadelphia Eagles","RT",58,23,16000000
+1518,"Las Vegas Raiders","RT",58,24,990000
+1519,"Los Angeles Rams","LG",58,24,850000
+1520,"Los Angeles Rams","MLB",58,24,825000
+1521,"Tennessee Titans","LT",58,30,762500
+1522,"Seattle Seahawks","CB",58,25,895000
+1523,"St. Louis Cardinals","MLB",58,26,3384000
+1524,"Detroit Lions","C",58,24,825000
+1525,"Los Angeles Rams","MLB",58,24,780000
+1526,"Minnesota Vikings","RG",58,23,742500
+1527,"Houston Texans","HB",58,24,920000
+1528,"Denver Broncos","TE",58,25,787500
+1529,"Dallas Cowboys","RT",58,23,586667
+1530,"New England Patriots","LG",58,25,990000
+1531,"Dallas Cowboys","CB",58,22,895000
+1532,"Chicago Bears","LT",58,24,825000
+1533,"Jacksonville Jaguars","QB",58,30,1375000
+1534,"Pittsburgh Steelers","TE",58,23,716115
+1535,"New England Patriots","LT",58,24,866867
+1536,"Baltimore Ravens","QB",58,22,780000
+1537,"Houston Texans","RT",58,24,705000
+1538,"Atlanta Falcons","RG",57,25,907500
+1539,"Green Bay Packers","QB",57,25,2400000
+1540,"Los Angeles Rams","RG",57,23,895000
+1541,"Seattle Seahawks","RG",57,26,850000
+1542,"Los Angeles Chargers","RG",57,25,705000
+1543,"Kansas Chiefs","LT",57,25,850000
+1544,"New York Giants","MLB",57,22,844238
+1545,"Dallas Cowboys","QB",57,23,882500
+1546,"Los Angeles Rams","RG",57,25,787500
+1547,"Pittsburgh Steelers","LT",57,25,882500
+1548,"Kansas Chiefs","C",57,23,165600
+1549,"Los Angeles Rams","MLB",57,23,742500
+1550,"New Orleans Saints","C",57,25,252000
+1551,"San Francisco 49ers","TE",57,25,965000
+1552,"Philadelphia Eagles","TE",57,27,965000
+1553,"Philadelphia Eagles","QB",57,26,257200
+1554,"Los Angeles Rams","TE",57,24,837500
+1555,"Chicago Bears","LG",56,24,850000
+1556,"Indianapolis Colts","LT",56,27,1100000
+1557,"Dallas Cowboys","LT",56,23,585000
+1558,"New York Giants","RG",56,24,3412500
+1559,"San Francisco 49ers","C",56,27,990000
+1560,"Denver Broncos","C",56,24,850000
+1561,"Tampa Bay Buccaneers","LG",56,24,825000
+1562,"St. Louis Cardinals","LT",56,24,648644
+1563,"Kansas Chiefs","LT",56,22,765000
+1564,"Seattle Seahawks","QB",56,29,1212500
+1565,"Detroit Lions","QB",56,25,762500
+1566,"Buffalo Bills","LT",56,23,586667
+1567,"Los Angeles Rams","C",56,22,787500
+1568,"Seattle Seahawks","RG",56,27,952500
+1569,"Chicago Bears","MLB",56,24,1550000
+1570,"Green Bay Packers","LT",56,24,850000
+1571,"Carolina Panthers","TE",56,27,252000
+1572,"San Francisco 49ers","QB",56,26,2500000
+1573,"Houston Texans","RT",56,26,695000
+1574,"New England Patriots","RT",56,25,920000
+1575,"Baltimore Ravens","C",56,22,780000
+1576,"Miami Dolphins","LG",55,26,1035000
+1577,"Miami Dolphins","WR",55,23,880000
+1578,"New York Jets","LT",55,27,1350000
+1579,"Seattle Seahawks","QB",55,23,165600
+1580,"Atlanta Falcons","QB",55,25,705000
+1581,"Houston Texans","RT",55,23,682500
+1582,"Tampa Bay Buccaneers","RG",55,23,787500
+1583,"Los Angeles Chargers","RT",55,26,695000
+1584,"Kansas Chiefs","RG",55,25,825000
+1585,"Las Vegas Raiders","WR",55,24,895000
+1586,"Los Angeles Rams","TE",55,24,705000
+1587,"Cleveland Browns","TE",55,30,1061667
+1588,"Indianapolis Colts","LG",55,26,895000
+1589,"Miami Dolphins","C",55,23,203622
+1590,"New Orleans Saints","RT",55,22,587500
+1591,"Washington Commanders","FS",55,24,907500
+1592,"Denver Broncos","QB",55,24,850000
+1593,"Pittsburgh Steelers","RG",55,25,787500
+1594,"Denver Broncos","LT",55,24,850000
+1595,"Los Angeles Rams","QB",55,24,630000
+1596,"Cincinnati Bengals","RG",54,23,590000
+1597,"Baltimore Ravens","QB",54,25,907500
+1598,"Kansas Chiefs","LT",54,25,850000
+1599,"Detroit Lions","RT",54,25,895000
+1600,"St. Louis Cardinals","TE",32,30,1037500
+1601,"Los Angeles Chargers","C",54,26,920000
+1602,"New England Patriots","QB",54,23,713500
+1603,"Tennessee Titans","C",54,28,965000
+1604,"Green Bay Packers","LT",54,24,742500
+1605,"Minnesota Vikings","QB",54,28,990000
+1606,"Dallas Cowboys","QB",54,24,165600
+1607,"Las Vegas Raiders","C",53,23,4325000
+1608,"Minnesota Vikings","QB",53,24,705000
+1609,"Tampa Bay Buccaneers","C",53,26,1250000
+1610,"New York Giants","LT",53,24,895000
+1611,"St. Louis Cardinals","RT",53,24,945000
+1612,"Minnesota Vikings","QB",53,23,742500
+1613,"San Francisco 49ers","RT",53,24,895000
+1614,"Indianapolis Colts","RT",53,28,1035000
+1615,"Buffalo Bills","QB",53,25,945000
+1616,"New York Jets","LG",52,26,165600
+1617,"New York Giants","QB",52,26,977500
+1618,"Chicago Bears","C",52,24,695000
+1619,"Washington Commanders","RT",52,24,825000
+1620,"Pittsburgh Steelers","C",52,24,780000
+1621,"Los Angeles Rams","QB",52,23,742500
+1622,"Philadelphia Eagles","C",51,22,589167
+1623,"Houston Texans","LT",51,25,233866
+1624,"Las Vegas Raiders","QB",51,26,252000
+1625,"Cleveland Browns","C",51,23,920000
+1626,"Buffalo Bills","LG",51,24,2133000
+1627,"Cleveland Browns","RT",51,23,825000
+1628,"Seattle Seahawks","RG",51,23,965000
+1629,"Los Angeles Rams","C",50,25,850000
+1630,"Atlanta Falcons","QB",48,26,165600
+1631,"Cleveland Browns","QB",48,29,920000
+1632,"Tennessee Titans","QB",47,25,555000
+1633,"Cincinnati Bengals","TE",44,36,1212500
+1634,"Atlanta Falcons","TE",43,31,1075000
+1635,"Baltimore Ravens","TE",36,27,660000
+1636,"Seattle Seahawks","TE",36,28,1110000
+1637,"Buffalo Bills","TE",35,26,1078750
+1638,"Los Angeles Rams","TE",35,32,1075000
+1639,"Tennessee Titans","TE",35,30,1120000
+1640,"New York Giants","TE",33,30,990000
+1641,"New York Jets","TE",31,26,1100000
+1642,"Kansas Chiefs","TE",31,31,890000
+1643,"Chicago Bears","TE",30,32,1127500
+1644,"Philadelphia Eagles","TE",30,27,1096667
+1645,"Denver Broncos","TE",28,23,600000
+1646,"Baltimore Ravens","TE",28,34,1212500
+1647,"Houston Texans","TE",28,34,1272500
+1648,"Miami Dolphins","TE",27,23,871363
+1649,"New England Patriots","TE",26,28,1077500
+1650,"New Orleans Saints","TE",26,27,1195000
+1651,"Jacksonville Jaguars","TE",25,25,907500
+1652,"Indianapolis Colts","TE",24,27,1212500
+1653,"Las Vegas Raiders","TE",24,24,1140833
+1654,"Tampa Bay Buccaneers","TE",23,29,850000
