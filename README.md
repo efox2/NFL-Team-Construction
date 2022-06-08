@@ -13,9 +13,9 @@ at SUNY University at Buffalo
 
 2. Install all the required R package libraries in your work environment to ensure complete functionality.
 
-3. Open up the R file: "visualizations/FINAL_RSHINY_APP"
+3. Open up the R file: "visualizations/FINAL_RSHINY_APP" in RStudio.
 
-4. Press "Run app in RStudio.
+4. Press "Run app".
 
   
 
