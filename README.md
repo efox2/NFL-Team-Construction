@@ -1,7 +1,7 @@
 
 # Optimizing NFL Roster Construction using Genetic Algorithm
 
-This repository contains the R codebase for the EAS 509 Statistics project, Spring'22,
+This repository contains the R codebase for the EAS 509 Statistical Learning project, Spring'22,
 at SUNY University at Buffalo 
 
   
