@@ -7,15 +7,11 @@
 #    http://shiny.rstudio.com/
 #
 
-###############################################################################
-# SET WORK DIRECTORY TO THE LOCATION OF YOUR "NFL-Team-Construction\visualizations" folder below
-setwd("")
-###############################################################################
-
 library(magrittr) # needs to be run every time you start R and want to use %>%
 library(dplyr)
 library(ggplot2)
 library(shiny)
+library(shinycssloaders)
 library(shinydashboard)
 library(tidyverse)
 library(shiny)
@@ -24,19 +20,24 @@ library(DT)
 library(ggplot2)
 library(shinydashboard)
 library(plotly)
-library(shiny)
-library(shinycssloaders)
+library(shinythemes)
 library(bslib)
 thematic::thematic_shiny(font = "auto")
 
 source('GeneticAlg.R')
 source('GeneticAlg2.R')
 source('GeneticAlg3.R')
+
 # Options for Spinner
 options(spinner.color="#0275D8", spinner.color.background="#ffffff", spinner.size=2)
-data = read.csv("simplified_dataset_v2.csv")
-data1 = read.csv("simplified_dataset_v2.csv")
-head(data,10)
+data = read.csv("./simplified_dataset_v2.csv")
+data1 = read.csv("./simplified_dataset_v2.csv")
+names(data)[1] = "PlayerName"
+names(data1)[1] = "PlayerName"
+
+clus_data <- data
+colnames(clus_data)[1] = 'PlayerName'
+
 encode_ordinal <- function(x, order = unique(x)) {
     x=as.numeric(factor(x, levels = order, exclude = NULL))
     x
@@ -49,14 +50,12 @@ df = data
 
 table(df[['Position']], encode_ordinal(df[['Position']]), useNA = "ifany")
 df['Position'] = encode_ordinal(df[['Position']])
-head(df,5)
 
-vars = list("PlayerName", "Position", "OverallRating", "Age","AnnualSalary")
+vars = list("PlayerName", "Position", "OverallRating", "Age", "AnnualSalary")
 
 unique_position = list("RE", "CB","HB", "QB", "WR", "LE", "RG",  
                        "TE",  "MLB", "LOLB", "DT", "LT", "SS", "C",
                        "LG", "FS",  "RT", "ROLB", "K", "FB", "P")
-
 
 Team_Det = list("Los Angeles Rams"  ,  "New England Patriots" , "Carolina Panthers"  ,   "Kansas Chiefs" ,   "New Orleans Saints" ,  
 "St. Louis Cardinals"  , "Houston Texans"   ,     "Dallas Cowboys"     ,   "San Francisco 49ers"  , "Seattle Seahawks"  ,   
@@ -66,13 +65,7 @@ Team_Det = list("Los Angeles Rams"  ,  "New England Patriots" , "Carolina Panthe
 "Los Angeles Chargers"  ,"Pittsburgh Steelers"   ,"Cincinnati Bengals"   , "Miami Dolphins"      ,  "Jacksonville Jaguars" ,
  "Washington Commanders", "Detroit Lions"  )    
 
-vars1 = list("PlayerName", "OverallRating", "Age","AnnualSalary")
-
-
-# Define UI for application that draws a histogram
-
-
-
+vars1 = list("PlayerName", "OverallRating", "Age", "AnnualSalary")
 
 sidebar <- dashboardSidebar(sidebarMenu(
     menuItem("About", tabName = "About",icon = icon("briefcase")),
@@ -87,34 +80,34 @@ sidebar <- dashboardSidebar(sidebarMenu(
 
 body <- dashboardBody(
 
-        tabItems(
-        
-          tabItem(tabName = "About",
-                  align="center",
-                  h2("R-Shiny application for NFL roster optimization using Genetic Algorithms")
-                  ,h2("Click on the menu items on the left bar to get started"),
-                  fluidRow(
-                    "For Genetic Algorithms, the application demos the roster optimization for the following constraints:"
-                  ),
-                  fluidRow(
-                    "Team name  : New England Patriots"
-                  ),
-                  fluidRow(
-                    "Preset players : 50",
-                  ),
+    tabItems(
+    
+        tabItem(tabName = "About",
+                align="center",
+                h2("R-Shiny application for NFL roster optimization using Genetic Algorithms")
+                ,h2("Click on the menu items on the left bar to get started"),
+                fluidRow(
+                  "For Genetic Algorithms, the application demos the roster optimization for the following constraints:"
+                ),
+                fluidRow(
+                  "Team name  : New England Patriots"
+                ),
+                fluidRow(
+                  "Preset players : 50",
+                ),
+                
+                fluidRow(
+                  "Target players to search : 3"
                   
-                  fluidRow(
-                    "Target players to search : 3"
-                    
-                  )
-                  #h3("For Genetic Algorithms, the application demos the roster optimization for the following constraints:"),
-                  #h4("Team name  : New England Patriots"),
-                  #h4("Preset players : 50")
-                  #,h4("Target players to search : 3")
-          ),
+                )
+                #h3("For Genetic Algorithms, the application demos the roster optimization for the following constraints:"),
+                #h4("Team name  : New England Patriots"),
+                #h4("Preset players : 50")
+                #,h4("Target players to search : 3")
+        ),
         
       #Clustering of players based on the position
-            tabItem( tabName = "ClusteringofPlayers",
+            tabItem( tabName = "ClusteringofPlayers",theme =shinytheme("cerulean"),
                      submitButton(text = "Create Plot for X and Y based on a Position"),
                      
                      fluidPage(titlePanel("Clustering of Players Based on a Position"),
@@ -125,7 +118,7 @@ body <- dashboardBody(
                                                           width = 3), mainPanel(plotOutput('plot7'))),
                                
                                
-                     ) 
+                     )
             ),
         # EDA FOR NFL STATISTICS
         
@@ -166,7 +159,6 @@ body <- dashboardBody(
                    
                    
                 )
-                    
                 )
         ),
         
@@ -174,7 +166,7 @@ body <- dashboardBody(
         #Genetic Algorithm with No ML function
         
         tabItem(tabName = "GeneticAlg1",
-                h2("Genetic Alg1"),
+                h2("Genetic Algorithm 1 - Simple Fitness Function"),
                 
                 fluidRow(
                     column(12,
@@ -186,39 +178,38 @@ body <- dashboardBody(
         
         
         tabItem(tabName = "GeneticAlg2",
-                h2("GeneticAlg2"),
+                h2("Genetic Algorithm 2 - XGBoost Regression Fitness Function"),
                 fluidRow(
                     column(12,
                            withSpinner(dataTableOutput(outputId = "genalg2"),type=4)
                     )
                 )
         ),
-        
+      
         
         tabItem(tabName = "GeneticAlg3",
-                h2("GeneticAlg3"),
+                h2("Genetic Algorithm 3 - Decision Tree Regression Fitness Function"),
                 fluidRow(
                     column(12,
                            withSpinner(dataTableOutput(outputId = "genalg3"),type=4)
                     )
                 )
         )
-        )
+    )
 )
 
 
-ui <- dashboardPage(
-    dashboardHeader(title = "NFL STATISTICS"),
+ui <- dashboardPage(skin = "blue",
+    dashboardHeader(title = "NFL RosterGen",titleWidth=250),
     sidebar,
-    body
+    body 
 )
 
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
-  
     
-    # Exploratory ata Analsys
+    # Exploratory Data Analsys
     output$plot1 <- renderPlot({
         data1 %>%
             filter(
@@ -256,7 +247,7 @@ server <- function(input, output) {
             coord_flip() +
             xlab(NULL) +
             ylab("Average Age of Player based on Position") +
-            
+            ggtitle("The Oldest Players in the NFL") +
             theme(text = element_text(family = "Impact"))
         
     })
@@ -271,8 +262,8 @@ server <- function(input, output) {
             geom_bar(stat = "identity") +
             coord_flip() +
             xlab(NULL) +
-            ylab("Average Age of Player of the teams") 
-            
+            ylab("Average Age of Player of the teams") +
+            ggtitle("The Youngest Players in the NFL") 
         
     })
     
@@ -292,7 +283,6 @@ server <- function(input, output) {
             coord_flip() +
             xlab(NULL) +
             ylab("Average Rating of Player based on Team") 
-        
     })
     
     output$plot6 <- renderPlot({    
@@ -320,6 +310,17 @@ server <- function(input, output) {
             theme(legend.position = "none")
     })
     
+    # Plots for clustering
+   output$clusplot1 <- renderPlot({
+      selectedData <- reactive({df[, c(input$xcol, input$ycol)]})
+      clusters <- reactive({kmeans(selectedData(), input$clusters)})
+      palette(c("#E41A1C", "#377EB8", "#4DAF4A", "#984EA3","#FF7F00", "#FFFF33", "#A65628", "#F781BF", "#999999"))
+      par(mar = c(5.1, 4.1, 0, 1))
+      plot(selectedData(),col = clusters()$cluster,pch = 20, cex = 3)
+      points(clusters()$centers, pch = 3, cex = 3, lwd = 3)
+      
+    })
+    
     output$plot7 = renderPlot({
       
       position_data <- reactive({subset(data,data$Position %in% input$Posit)})
@@ -332,22 +333,22 @@ server <- function(input, output) {
       
     })
     
-    #Genetic ALgorithm function
+    #Genetic ALgorithm function 1
     
     output$genalg1 <- renderDataTable({ geneticalg(3,"New England Patriots")})
     
+    # Genetic Algorithm 2 - XGBoost Regression Fitness Function
     
     output$genalg2 <- renderDataTable({ geneticalg2(3,"New England Patriots")})
     
+    # Genetic Algorithm 3 - Decision Tree Regression Fitness Function
     
     output$genalg3 <- renderDataTable({ geneticalg3(3,"New England Patriots")})
     
-    
-
 }
 
 
-#It appears that quarterbacks have the most agility at an older age, whereas the youngets players play a large variety of positions.
+#It appears that quarterbacks have the most agility at an older age, whereas the youngest players play a large variety of positions.
 
 # Run the application 
 shinyApp(ui = ui, server = server)
