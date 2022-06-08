@@ -122,7 +122,9 @@ body <- dashboardBody(
         
         tabItem(tabName = "ClusteringofPlayers",
                navbarPage("KMeans Clustering",theme =shinytheme("cerulean"),#theme = shinytheme("united"),
+                          
                            tabPanel("Clustering of Players",
+                                    submitButton(text = "Create new plot with new filters!"),
                                     sidebarPanel(selectInput('xcol', 'X Variable', vars),
                                                  selectInput('ycol', 'Y Variable',vars),
                                                  numericInput('clusters', 'Cluster count', 3, min = 1, max = 9),
@@ -132,6 +134,7 @@ body <- dashboardBody(
                                    ),
                            
                            tabPanel("Clustering of Players Based on a Position",
+                                    submitButton(text = "Create new plot with new filters!"),
                                     sidebarPanel(selectInput("Position","Position:",choices = unique_position),
                                                  selectInput('x', 'X Variable', vars1),
                                                  selectInput('y', 'Y Variable', vars1),
