@@ -75,12 +75,13 @@ vars1 = list("PlayerName", "OverallRating", "Age","AnnualSalary")
 
 
 sidebar <- dashboardSidebar(sidebarMenu(
-   
+    menuItem("About", tabName = "About",icon = icon("briefcase")),
     menuItem("Exploratory Data Analysis", tabName = "EDA",icon = icon("bar-chart-o")),
     menuItem("Clustering", tabName = "ClusteringofPlayers",icon = icon("table")),
     menuItem("Genetic Algorithm 1", tabName = "GeneticAlg1",icon = icon("refresh")),
     menuItem("Genetic Algorithm 2", tabName = "GeneticAlg2",icon = icon("refresh")),
-    menuItem("Genetic Algorithm 3", tabName = "GeneticAlg3",icon = icon("refresh"))
+    menuItem("Genetic Algorithm 3", tabName = "GeneticAlg3",icon = icon("refresh")),
+    menuItem("Source Code",icon = icon("github"), href = "https://github.com/efox2/NFL-Team-Construction")
 )
 )
 
@@ -88,9 +89,31 @@ body <- dashboardBody(
 
         tabItems(
         
+          tabItem(tabName = "About",
+                  align="center",
+                  h2("R-Shiny application for NFL roster optimization using Genetic Algorithms")
+                  ,h2("Click on the menu items on the left bar to get started"),
+                  fluidRow(
+                    "For Genetic Algorithms, the application demos the roster optimization for the following constraints:"
+                  ),
+                  fluidRow(
+                    "Team name  : New England Patriots"
+                  ),
+                  fluidRow(
+                    "Preset players : 50",
+                  ),
+                  
+                  fluidRow(
+                    "Target players to search : 3"
+                    
+                  )
+                  #h3("For Genetic Algorithms, the application demos the roster optimization for the following constraints:"),
+                  #h4("Team name  : New England Patriots"),
+                  #h4("Preset players : 50")
+                  #,h4("Target players to search : 3")
+          ),
         
-        # Dinesh Should Work on this
-        
+      #Clustering of players based on the position
             tabItem( tabName = "ClusteringofPlayers",
                      submitButton(text = "Create Plot for X and Y based on a Position"),
                      
@@ -161,7 +184,6 @@ body <- dashboardBody(
                 
         ),
         
-        # Sumedh -- > copy the UI of genealg1
         
         tabItem(tabName = "GeneticAlg2",
                 h2("GeneticAlg2"),
@@ -172,7 +194,6 @@ body <- dashboardBody(
                 )
         ),
         
-        # Sanjay -- > copy the UI of genealg1
         
         tabItem(tabName = "GeneticAlg3",
                 h2("GeneticAlg3"),
@@ -299,31 +320,30 @@ server <- function(input, output) {
             theme(legend.position = "none")
     })
     
+    output$plot7 = renderPlot({
+      
+      position_data <- reactive({subset(data,data$Position %in% input$Posit)})
+      selected_data = reactive({position_data()[, c(input$xcol, input$ycol)]})
+      Clusters = reactive({kmeans(selected_data(), input$Clusters)})
+      palette(c("#E41A1C", "#377EB8", "#4DAF4A", "#984EA3","#FF7F00","#FFFF33", "#A65628", "#F781BF", "#999999"))
+      par(mar = c(5.1, 4.1, 0, 1))
+      plot(selected_data(),col = Clusters()$cluster,pch = 20, cex = 3)
+      points(Clusters()$centers, pch = 4, cex = 4, lwd = 4)
+      
+    })
+    
     #Genetic ALgorithm function
     
     output$genalg1 <- renderDataTable({ geneticalg(3,"New England Patriots")})
     
-    # Sumedh -- > Call the function for your gen alg using the structre abv
     
     output$genalg2 <- renderDataTable({ geneticalg2(3,"New England Patriots")})
     
-    # Sanjay -- > Call the function for your gen alg using the structre abv
     
     output$genalg3 <- renderDataTable({ geneticalg3(3,"New England Patriots")})
     
     
-    output$plot7 = renderPlot({
-        
-        position_data <- reactive({subset(data,data$Position %in% input$Posit)})
-        selected_data = reactive({position_data()[, c(input$xcol, input$ycol)]})
-        Clusters = reactive({kmeans(selected_data(), input$Clusters)})
-        palette(c("#E41A1C", "#377EB8", "#4DAF4A", "#984EA3","#FF7F00","#FFFF33", "#A65628", "#F781BF", "#999999"))
-        par(mar = c(5.1, 4.1, 0, 1))
-        plot(selected_data(),col = Clusters()$cluster,pch = 20, cex = 3)
-        points(Clusters()$centers, pch = 4, cex = 4, lwd = 4)
-        
-    })
-    
+
 }
 
 
