@@ -9,7 +9,7 @@
 
 ###############################################################################
 # SET WORK DIRECTORY TO THE LOCATION OF YOUR "NFL-Team-Construction\visualizations" folder below
-setwd("")
+# setwd("")
 ###############################################################################
 
 library(magrittr) # needs to be run every time you start R and want to use %>%
@@ -33,6 +33,7 @@ source('GeneticAlg3.R')
 # Options for Spinner
 options(spinner.color="#0275D8", spinner.color.background="#ffffff", spinner.size=2)
 data = read.csv("./simplified_dataset_v2.csv")
+names(data)[1] = "PlayerName"
 
 clus_data <- data
 colnames(clus_data)[1] = 'PlayerName'
@@ -82,26 +83,45 @@ selectInput("PlayerTeamZone" , "PlayerTeamZone", choices = data %>%
 
 
 sidebarMenu(
-    menuItem("Summary", tabName = "Summary",icon = icon("list_alt")),
+    menuItem("About", tabName = "About",icon = icon("briefcase")),
     menuItem("Exploratory Data Analysis", tabName = "EDA",icon = icon("bar-chart-o")),
     menuItem("Clustering", tabName = "ClusteringofPlayers",icon = icon("table")),
     menuItem("Genetic Algorithm 1", tabName = "GeneticAlg1",icon = icon("refresh")),
     menuItem("Genetic Algorithm 2", tabName = "GeneticAlg2",icon = icon("refresh")),
-    menuItem("Genetic Algorithm 3", tabName = "GeneticAlg3",icon = icon("refresh"))
+    menuItem("Genetic Algorithm 3", tabName = "GeneticAlg3",icon = icon("refresh")),
+    menuItem("Source Code",icon = icon("github"), href = "https://github.com/efox2/NFL-Team-Construction")
 )
 )
 
 
 body <- dashboardBody(
     tabItems(
-        tabItem(tabName = "Summary",
-                h2("Summary")
+        tabItem(tabName = "About",
+                align="center",
+                h2("R-Shiny application for NFL roster optimization using Genetic Algorithms")
+                ,h2("Click on the menu items on the left bar to get started"),
+                fluidRow(
+                  "For Genetic Algorithms, the application demos the roster optimization for the following constraints:"
+                ),
+                fluidRow(
+                  "Team name  : New England Patriots"
+                ),
+                fluidRow(
+                  "Preset players : 50",
+                ),
+                
+                fluidRow(
+                  "Target players to search : 3"
+                  
+                )
+                #h3("For Genetic Algorithms, the application demos the roster optimization for the following constraints:"),
+                #h4("Team name  : New England Patriots"),
+                #h4("Preset players : 50")
+                #,h4("Target players to search : 3")
         ),
         
-        # Dinesh Should Work on this
-        
         tabItem(tabName = "ClusteringofPlayers",
-               navbarPage("KMeans Clustering",theme = shinytheme("united"),
+               navbarPage("KMeans Clustering",theme =shinytheme("cerulean"),#theme = shinytheme("united"),
                            tabPanel("Clustering of Players",
                                     sidebarPanel(selectInput('xcol', 'X Variable', vars),
                                                  selectInput('ycol', 'Y Variable',vars),
@@ -147,7 +167,7 @@ body <- dashboardBody(
         #Genetic Algorithm with No ML function
         
         tabItem(tabName = "GeneticAlg1",
-                h2("Genetic Alg1"),
+                h2("Genetic Algorithm 1 - Simple Fitness Function"),
                 
                 fluidRow(
                     column(12,
@@ -157,21 +177,19 @@ body <- dashboardBody(
                 
         ),
         
-        # Sumedh -- > copy the UI of genealg1
         
         tabItem(tabName = "GeneticAlg2",
-                h2("GeneticAlg2"),
+                h2("Genetic Algorithm 2 - XGBoost Regression Fitness Function"),
                 fluidRow(
                     column(12,
                            withSpinner(dataTableOutput(outputId = "genalg2"),type=4)
                     )
                 )
         ),
-        
-        # Sanjay -- > copy the UI of genealg1
+      
         
         tabItem(tabName = "GeneticAlg3",
-                h2("GeneticAlg3"),
+                h2("Genetic Algorithm 3 - Decision Tree Regression Fitness Function"),
                 fluidRow(
                     column(12,
                            withSpinner(dataTableOutput(outputId = "genalg3"),type=4)
@@ -182,8 +200,8 @@ body <- dashboardBody(
 )
 
 
-ui <- dashboardPage(skin = "green",
-    dashboardHeader(title = "NFL STATISTICS"),
+ui <- dashboardPage(skin = "blue",
+    dashboardHeader(title = "NFL Roster Optimization",titleWidth=250),
     sidebar,
     body 
 )
@@ -316,22 +334,22 @@ server <- function(input, output) {
       
     })
     
-    #Genetic ALgorithm function
+    #Genetic ALgorithm function 1
     
     output$genalg1 <- renderDataTable({ geneticalg(3,"New England Patriots")})
     
-    # Sumedh -- > Call the function for your gen alg using the structre abv
+    # Genetic Algorithm 2 - XGBoost Regression Fitness Function
     
     output$genalg2 <- renderDataTable({ geneticalg2(3,"New England Patriots")})
     
-    # Sanjay -- > Call the function for your gen alg using the structre abv
+    # Genetic Algorithm 3 - Decision Tree Regression Fitness Function
     
     output$genalg3 <- renderDataTable({ geneticalg3(3,"New England Patriots")})
     
 }
 
 
-#It appears that quarterbacks have the most agility at an older age, whereas the youngets players play a large variety of positions.
+#It appears that quarterbacks have the most agility at an older age, whereas the youngest players play a large variety of positions.
 
 # Run the application 
 shinyApp(ui = ui, server = server)
