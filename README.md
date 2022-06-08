@@ -1,5 +1,5 @@
 
-# Optimizing NFL Roster Construction using Genetic Algorithm
+# NFL RosterGen: An RShiny application for optimizing NFL roster construction using Genetic Algorithms
 
 This repository contains the R codebase for the EAS 509 Statistical Learning project, Spring'22,
 at SUNY University at Buffalo 
