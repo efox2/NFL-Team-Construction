@@ -1,0 +1,56 @@
+
+cff-version: 1.2.0
+title: >-
+  NFL RosterGen: An RShiny application for optimizing
+  NFL roster construction using Genetic Algorithms
+message: >-
+  "If you use this software, please cite it as
+  below."
+type: software
+authors:
+  - given-names: Sumedh
+    family-names: Khodke
+    email: sumedhk@buffalo.edu
+    orcid: 'https://orcid.org/0000-0002-2580-3075'
+  - given-names: Evan
+    family-names: Fox
+    email: efox2@buffalo.edu
+  - given-names: Dineshkumar
+    family-names: Katta
+    email: dkatta@buffalo.edu
+  - given-names: Amritha
+    family-names: Subburayan
+    email: asubbura@buffalo.edu
+  - given-names: Sanjay
+    family-names: Aravind Loganathan Ravichandran
+    email: sanjayar@buffalo.edu
+identifiers:
+  - type: url
+    value: 'https://github.com/efox2/NFL-Team-Construction'
+    description: >-
+      This repository contains the R codebase for the
+      NFL RosterGen App
+abstract: >-
+  Roster construction is critical in any sport for
+  the team's subsequent performance. The significance
+  of this project is to create better team
+  construction strategies for American Football teams
+  in the NFL, and the solution can be extrapolated to
+  other sports. Multiple factors influence the
+  selection process, such as current team
+  construction, player skill, financial constraints,
+  which may complicate the process of selecting
+  53-man rosters since there are several permutations
+  for a greedy-search heuristic. The goal of this
+  project is to use a Genetic Algorithm to
+  objectively select players by integrating an
+  ML-based fitness function used to evaluate a team’s
+  quality.
+keywords:
+  - NFL
+  - Machine-Learning
+  - Roster-formulation
+  - Genetic-Algorithm
+  - Fitness-Function
+license: MIT
+date-released: '2022-06-16'
